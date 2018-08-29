@@ -1,0 +1,56 @@
+<div class="about-content banner-relative section-wrapper module-wrapper top-banner-section bg-cover" style="background-image:url('{{ section.settings.banner-image | img_url: "" }}');">
+  <picture>
+    <source media='(max-width: 520px)' srcset='{{ section.settings.banner-image-mobile | img_url: "" }}'>
+    <img src='{{ section.settings.banner-image | img_url: "" }}' alt='.'>
+</picture>
+  <div class="module page {% if page.content == blank %}no-content{% endif %}">
+    <div class="module-header page-header">
+      <div class="module-title pd-top left-banner-title">
+        <div class="col-lg-5  col-md-8">
+          <h1><span>{{ section.settings.banner-title }}</span>{{ section.settings.banner-subtitle }}</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "About Banner Section",
+    "settings": [
+      {
+        "id": "banner-title",
+        "type": "text",
+        "label": "Banner Title",
+        "default": "Banner Title"
+      },
+	  {
+        "id": "banner-subtitle",
+        "type": "text",
+        "label": "Banner Sub Title",
+        "default": "Banner Sub Title"
+      },
+      {
+         "type":      "image_picker",
+         "id":        "banner-image",
+         "label":     "Select Image"
+      },
+	  {
+         "type":      "image_picker",
+         "id":        "banner-image-mobile",
+         "label":     "Select Mobile Image"
+      }
+  	],
+	"presets": [
+        {
+         "name": "About Banner Section"
+			
+        }
+     ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

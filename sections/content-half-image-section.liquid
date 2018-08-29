@@ -1,0 +1,56 @@
+<div class="about-side-img">
+    <div class="module-wrapper">
+      <div class="module home-left-right-features">
+        <div class="module-body">
+          <div class="home-left-right-feature clearfix media-aligned-right">
+            <div class="home-left-right-section home-left-right-text ">
+                  <h3 class="module-title home-left-right-titles">
+                    {{section.settings.title}}
+                  </h3>
+                  <div class="module-content home-left-right-content">
+                    {{section.settings.content}}
+                  </div>
+            </div>
+            <div class="home-left-right-section home-left-right-media">
+                  <img class="fullimg" src="{{section.settings.half-image | img_url: "" }}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% schema %}
+  {
+    "name": "Half Content Half Image",
+    "settings": [
+	{
+      "id": "title",
+      "type": "text",
+      "label": "Title",
+      "default": "Title"
+    },
+	{
+      "id": "content",
+      "type": "richtext",
+      "label": "Content",
+      "default": "<p>Content</p>"
+    },
+	{
+      "id": "half-image",
+      "type": "image_picker",
+      "label": "Select Image"
+    }
+	],
+	"presets": [
+        {
+         "name": "Half Content Half Image"
+		}
+		]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,85 @@
+<div class="accessories-section">
+  <div class="module">
+
+{% if section.settings.title != blank %}
+<div class="module-header home-products-header">
+  <h3 class="module-title">{{ section.settings.title }}</h3>
+
+  {% if section.settings.subtitle != blank %}
+  <p class="module-subtitle">{{ section.settings.subtitle }}</p>
+  {% endif %}
+</div>
+{% endif %}
+<div class="list collection-list compact crop image-contain column-3">
+  {% for product in collections[section.settings.col_access].products limit:  3  %}
+  <div class="list-item" id="product-list-item-1028994072691" onclick="window.location = '/products/winesulator-2-uncorkd-xl-wine-glasses-lid-glitter-merlot'">
+  <!--   <a class="list-container" href="/products/winesulator-2-uncorkd-xl-wine-glasses-lid-glitter-merlot"> -->
+    <div class="list-image-wrapper">
+      <img class="list-image" src="{{ product.featured_image | img_url: "600x600" }}" alt="{{ product.title }}">
+      <div class="list-overlay"></div>
+      <div class="list-icon icon icon-cart"></div>
+    </div>
+    <div class="list-text-wrapper">
+      <div class="list-title">
+        {{ product.title }} 
+      </div>
+      <div class="list-meta">
+        <span class="price">
+<!--           <span class="money">{{product.price_max}}</span>
+          <span class="original money">
+            {{product.price}}
+          </span> -->
+          <span class="saving">
+          </span>
+        </span>
+        <div class="prod-btn-bottom">
+          <a class="btn btn-outline-dark" href="{{ product.url }}">Click to Browse</a>
+        </div>
+      </div>
+    </div>
+  <!--   </a> -->
+  </div>
+{% endfor %}
+</div>
+{% if collections[section.settings.col_access] != empty %}
+<div class="module-footer home-products-footer">
+  <a class="view-all-btn" href="{{ collections[section.settings.col_access].url }}">View All {{ collections[section.settings.col_access].title }}</a>
+</div>
+{% endif %}
+</div>
+</div>
+  
+{% schema %}
+{
+  "name": "Enhance Accessories",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading"
+    },
+    {
+      "type": "collection",
+      "id": "col_access",
+      "label": "Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Enhance Accessories"
+    }
+  ]
+}
+{% endschema %}
+
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

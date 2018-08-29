@@ -1,0 +1,77 @@
+<div class="content-careers">
+  <div class="module">
+    <div class="col-md-7 m-auto">
+      <h3>{{ section.settings.careers-title }}</h3>
+    	{{ section.settings.careers-content }}
+    </div>
+  </div>
+</div>
+<div class="top-image-section">
+  <!--container as module-->
+  <div class="module pdt-0">
+    <h3>{{ section.settings.icon-title }}</h3>
+    
+    <div class="row top-icons-row">
+       {% for block in section.blocks %}
+      <div class="col inner-img">
+        <div class="inner-main-icon row align-items-center">
+          <div class="side-icon">
+           <img class="wholesale-icon" src="{{ block.settings.img-icon | img_url: "" }}" alt="">
+          </div>
+          <div class="icon-content">
+           {{ block.settings.icon-text}}
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Top Icons Careers",
+    "settings": [
+	{
+        "id": "careers-title",
+        "type": "text",
+        "label": "Title",
+		"default": "Title"
+      },
+	{
+        "id": "careers-content",
+        "type": "richtext",
+        "label": "Page Content",
+		"default": "<p>Page Content</p>"
+      },
+	{
+        "id": "icon-title",
+        "type": "text",
+        "label": "Title"
+      }
+	],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "Add Icon",
+        "settings": [
+          {
+            "id": "img-icon",
+            "type": "image_picker",
+            "label": "Image Icon"
+          },
+			{
+              "id": "icon-text",
+              "type": "richtext",
+              "label": "Icon Text"
+            }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

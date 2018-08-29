@@ -1,0 +1,2569 @@
+{
+  "current": {
+    "theme-primary-color": "#393939",
+    "theme-secondary-color": "#000000",
+    "heading-text-color": "#000000",
+    "body-text-color": "#797676",
+    "border-color": "#e3e3e3",
+    "body-background-color": "#ffffff",
+    "body-font": "'Open Sans', sans-serif",
+    "body-font-weight": "300",
+    "heading-font": "'Open Sans', sans-serif",
+    "heading-font-weight": "300",
+    "primary-button-font": "'Open Sans', sans-serif",
+    "primary-button-font-weight": "700",
+    "featured-product-main": "",
+    "product_module_1": "none",
+    "product_module_2": "none",
+    "product-sale-goal-use": false,
+    "product-sale-goal-style": "gradient",
+    "product-sale-goal-button": "Pre-order",
+    "product-sale-goal-estimated-delivery-date": "Estimated delivery: April",
+    "product-goal-starting-quantity": "",
+    "product-goal": "",
+    "product-goal-use-quantity": false,
+    "product-sale-goal-date-time": "06\/21\/2017 15:00",
+    "social-facebook-url": "www.facebook.com\/kryogear",
+    "social-twitter-url": "",
+    "social-google-url": "",
+    "social-pinterest-url": "",
+    "social-instagram-url": "www.instagram.com\/kryogear",
+    "social-vimeo-url": "",
+    "social-youtube-url": "",
+    "social-rss-url": "",
+    "show-currency-switcher": false,
+    "currency-switcher-format": "money_format",
+    "currency-switcher-supported-currencies": "INR GBP CAD USD AUD EUR JPY",
+    "currency-switcher-default": "USD",
+    "favicon": "",
+    "checkout_header_image": "shopify:\/\/shop_images\/bg-cart.jpg",
+    "checkout_logo_image": "shopify:\/\/shop_images\/brumate-logo.png",
+    "checkout_logo_position": "center",
+    "checkout_logo_size": "large",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1f1f1f",
+    "checkout_error_color": "#ff6d6d",
+    "theme-primary-color-hover": "#0288b5",
+    "sections": {
+      "home-slideshow": {
+        "type": "home-slideshow",
+        "blocks": {
+          "slide-1": {
+            "type": "slide",
+            "settings": {
+              "alignment": "right",
+              "text_style": "dark",
+              "image": "shopify:\/\/shop_images\/home-main.jpg",
+              "mhimage": "shopify:\/\/shop_images\/home-main_4ad51a17-f65f-4c76-aded-1a59b4d484de.jpg",
+              "overlay_style": "none",
+              "overlay_opacity": "7",
+              "title": "UNCORK’D",
+              "subtitle": "BRUMATE",
+              "cta": "Browse",
+              "url": "\/collections\/uncorkd-xl"
+            }
+          }
+        },
+        "block_order": [
+          "slide-1"
+        ],
+        "settings": {
+          "enable": true,
+          "layout": "full-width",
+          "transition": "transition-fade",
+          "autoplay": false
+        }
+      },
+      "home-alternating-content": {
+        "type": "home-alternating-content",
+        "disabled": true,
+        "blocks": {
+          "alternating-content-1": {
+            "type": "image",
+            "settings": {
+              "style": "default",
+              "title": "16oz Cans",
+              "text": "<p>The TR&iacute;O was built specifically to fit your favorite 16oz beverage. &nbsp;Our signature gasket design prevents any interference in your drinking experience - you won't even know its there. Perfect for Energy Drinks &amp; Tall Boys!&nbsp;<\/p>",
+              "button_text": "Buy Now",
+              "button_link": "shopify:\/\/products\/copy-of-copy-of-copy-of-copy-of-copy-of-kryo-winesulator-750ml",
+              "image": ""
+            }
+          },
+          "1487089818328": {
+            "type": "image",
+            "settings": {
+              "style": "default",
+              "title": "12 oz Cans",
+              "text": "<p>Our included Arctic Adapter provides a perfect fit for&nbsp;12oz Cans. It's filled with a proprietary freezing gel that will turn the TR&iacute;O into a mini freezer and keep&nbsp;your favorite 12oz beverage up to 5x colder than the leading competitor. In a 1 hour test the Arctic Adapter actually lowered&nbsp;the temperature of the test can - &nbsp;just throw it in the freezer for 2-3 hours and you will have over 6 hours of cooling power on the go.&nbsp;<\/p>\r\n<p><\/p>\r\n<p>(<em>Bottles fit fine but they have some wiggle room. For an airtight fit, slip a neoprene koozie on the bottle and insert into the HOPSULATOR<\/em>)<\/p>",
+              "button_text": "See How",
+              "button_link": "shopify:\/\/pages\/about-us",
+              "image": ""
+            }
+          },
+          "1487094113736": {
+            "type": "image",
+            "settings": {
+              "style": "default",
+              "title": "Pint Glass",
+              "text": "<p>Like drinking straight out of a glass? Bringing a growler along?&nbsp;Crack open a cold one or pour your favorite local brew straight into the TR&iacute;O and use our included lid for the perfect pint. Our triple-insulation will ensure you enjoy your favorite drink until the last drop and our high-grade stainless steel won't affect the taste of your brew or cocktail. It also works with coffee\/tea and fits perfectly under your Keurig.&nbsp;<\/p>",
+              "button_text": "",
+              "button_link": "",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "alternating-content-1",
+          "1487089818328",
+          "1487094113736"
+        ],
+        "settings": {}
+      },
+      "home-product-focus": {
+        "type": "home-product-focus",
+        "disabled": true,
+        "blocks": {
+          "home-product-focus-1": {
+            "type": "feature",
+            "settings": {
+              "title": "Zero-Hassle Gasket Design",
+              "text": "<p>Our unique&nbsp;interior threading gasket ensures that there is zero interference while drinking your favorite beverage unlike our competition.&nbsp;<\/p>",
+              "icon": ""
+            }
+          },
+          "home-product-focus-2": {
+            "type": "feature",
+            "settings": {
+              "title": "Impeccable Build Quality",
+              "text": "<p>We used the absolute highest quality materials available while crafting the HOPSULATOR TR&iacute;O. From our&nbsp;kitchen grade 18\/8 stainless steel and silicone to the&nbsp;copolyester lid and BPA-Free Powder Coat&nbsp;you can be sure that you are getting the best of the best.<\/p>",
+              "icon": ""
+            }
+          },
+          "home-product-focus-3": {
+            "type": "feature",
+            "settings": {
+              "title": "Multipurpose Drinking Tool",
+              "text": "<p>The TR&iacute;O fits 16oz cans, 12oz cans, and can be used as a pint glass. No need to waste your money on multiple products or haul around a backpack full of accessories. No matter what you bring along for your adventure the TR&iacute;O has you covered.&nbsp;<\/p>",
+              "icon": ""
+            }
+          },
+          "home-product-focus-4": {
+            "type": "feature",
+            "settings": {
+              "title": "5x Colder",
+              "text": "<p>Our proprietary triple-insulation&nbsp;combined with our Arctic Adapter will keep your favorite beverage up to 5x colder than the leading competition.&nbsp;<\/p>",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "home-product-focus-1",
+          "home-product-focus-2",
+          "home-product-focus-3",
+          "home-product-focus-4"
+        ],
+        "settings": {
+          "show_product_image": true,
+          "product": "",
+          "style": "default",
+          "title": "WHAT MAKES THE TRÍO DIFFERENT?",
+          "subtitle": "(everything)"
+        }
+      },
+      "home-full-width-media": {
+        "type": "home-full-width-media",
+        "disabled": true,
+        "settings": {
+          "style": "default",
+          "title": "",
+          "text": "<p>&nbsp;&nbsp;<\/p>",
+          "media_layout": "video-highlight",
+          "image": "",
+          "video_url": "https:\/\/vimeo.com\/157213547",
+          "button_text": "",
+          "button_link": ""
+        }
+      },
+      "home-text-columns-with-icons": {
+        "type": "home-text-columns-with-icons",
+        "disabled": true,
+        "blocks": {
+          "text-column-1": {
+            "type": "text_column",
+            "settings": {
+              "title": "$20 credit earned for every referral you drive",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/doc.png",
+              "icon": ""
+            }
+          },
+          "text-column-2": {
+            "type": "text_column",
+            "settings": {
+              "title": "15% lifetime discount",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/percent.png",
+              "icon": ""
+            }
+          },
+          "text-column-3": {
+            "type": "text_column",
+            "settings": {
+              "title": "Exclusive access to our Facebook group",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/group.png",
+              "icon": ""
+            }
+          },
+          "1530017611778": {
+            "type": "text_column",
+            "settings": {
+              "title": "Exclusive access to  upcoming product releases",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/gift.png",
+              "icon": ""
+            }
+          }
+        },
+        "block_order": [
+          "text-column-1",
+          "text-column-2",
+          "text-column-3",
+          "1530017611778"
+        ],
+        "settings": {
+          "style": "default",
+          "columns_per_row": "4",
+          "title": "BECOME AN AMBASSADOR",
+          "subtitle": "Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies,  mauris, integer auctor turpis",
+          "form-code": ""
+        }
+      },
+      "home-testimonials": {
+        "type": "home-testimonials",
+        "disabled": true,
+        "blocks": {
+          "testimonial-1": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          },
+          "1487226560449": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          },
+          "1487226563362": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          },
+          "1487226580106": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          },
+          "1487653121288": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          },
+          "1487653934210": {
+            "type": "testimonial",
+            "settings": {
+              "quote": "",
+              "source": "",
+              "city": "",
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "testimonial-1",
+          "1487226560449",
+          "1487226563362",
+          "1487226580106",
+          "1487653121288",
+          "1487653934210"
+        ],
+        "settings": {
+          "style": "default",
+          "title": "WHAT'S THE BUZZ?",
+          "subtitle": "CUSTOMER REVIEWS"
+        }
+      },
+      "general-newsletter": {
+        "type": "general-newsletter",
+        "settings": {
+          "enable": false,
+          "style": "default"
+        }
+      },
+      "general-social-feeds": {
+        "type": "general-social-feeds",
+        "settings": {}
+      },
+      "general-footer": {
+        "type": "general-footer",
+        "blocks": {
+          "footer-block-1": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "footer-block-2": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-menu2"
+            }
+          },
+          "1487360941588": {
+            "type": "menu",
+            "settings": {
+              "menu": "footer-menu3"
+            }
+          },
+          "1530082010019": {
+            "type": "richtext",
+            "settings": {
+              "title": "Newsletter",
+              "text": "<p>Sign up for our e-mail and be the first who know our special offers!&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-block-1",
+          "footer-block-2",
+          "1487360941588",
+          "1530082010019"
+        ],
+        "settings": {
+          "style": "dark",
+          "enable_borders": false,
+          "payment_icons": false,
+          "show_logo": true,
+          "footer_logo": "shopify:\/\/shop_images\/logo.png",
+          "footer_logo_alternate": "",
+          "facebooklink": "https:\/\/www.facebook.com\/MyBruMate",
+          "twitterlink": "#",
+          "gpluslink": "#",
+          "youtubelink": "#"
+        }
+      },
+      "general-header": {
+        "type": "general-header",
+        "settings": {
+          "menu": "main-menu",
+          "header_sticky": false,
+          "show_cart": true,
+          "show_wishlist": true,
+          "drawer_social_icons": false,
+          "header_logo": "shopify:\/\/shop_images\/main-logo.png",
+          "header_logo_alternate": ""
+        }
+      },
+      "1487090293580": {
+        "type": "home-text-columns-with-icons",
+        "blocks": {
+          "1487090293580-0": {
+            "type": "text_column",
+            "settings": {
+              "title": "$20 credit earned for  every referral you drive",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/ambassador-1.png",
+              "icon": "ion-image"
+            }
+          },
+          "1487090293580-1": {
+            "type": "text_column",
+            "settings": {
+              "title": "15% lifetime discount",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/ambassador-2.png",
+              "icon": "ion-image"
+            }
+          },
+          "1487090293580-2": {
+            "type": "text_column",
+            "settings": {
+              "title": "Exclusive access to our Facebook group",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/ambassador-3.png",
+              "icon": "ion-image"
+            }
+          },
+          "1530021504646": {
+            "type": "text_column",
+            "settings": {
+              "title": "Exclusive access to  upcoming product releases",
+              "text": "",
+              "button_text": "",
+              "button_link": "",
+              "icon-img": "shopify:\/\/shop_images\/ambassador-4.png",
+              "icon": "ion-image"
+            }
+          }
+        },
+        "block_order": [
+          "1487090293580-0",
+          "1487090293580-1",
+          "1487090293580-2",
+          "1530021504646"
+        ],
+        "settings": {
+          "style": "default",
+          "columns_per_row": "4",
+          "title": "BECOME AN AMBASSADOR",
+          "subtitle": "Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies,  mauris, integer auctor turpis",
+          "form-code": "<div style=\"margin:0 auto;\" class=\"pxFormGenerator\" id=\"rmvO-ID6jAqG4Y07Z3F1yA\"><\/div>"
+        }
+      },
+      "template-collection": {
+        "type": "template-collection",
+        "blocks": {
+          "1531402119808": {
+            "type": "collectionbanner",
+            "settings": {
+              "selectcollection": "",
+              "bimg": "shopify:\/\/shop_images\/listing-main-banner.jpg",
+              "banner-title": ""
+            }
+          }
+        },
+        "block_order": [
+          "1531402119808"
+        ],
+        "settings": {
+          "products_per_page": "200",
+          "stock_overlay_show": false,
+          "stock_overlay_threshold": "5"
+        }
+      },
+      "template-product": {
+        "type": "template-product",
+        "settings": {
+          "enable_zoom": true,
+          "disable_ajax_add_product": false,
+          "enable-share-buttons": true,
+          "additional_info_text_1": "",
+          "additional_info_url_1": "",
+          "additional_info_icon_1": "info",
+          "additional_info_text_2": "",
+          "additional_info_url_2": "",
+          "additional_info_icon_2": "info"
+        }
+      },
+      "module-related-products": {
+        "type": "module-related-products",
+        "settings": {
+          "enable": false,
+          "style": "default",
+          "stock_overlay_show": false,
+          "stock_overlay_threshold": "3"
+        }
+      },
+      "1487096123238": {
+        "type": "home-images-with-text",
+        "disabled": true,
+        "blocks": {
+          "1487203883400": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "title": "Coffee In the Morning. Beer at Night.",
+              "text": "<p>The TR&iacute;O works with <strong>warm<\/strong> and <strong>cold<\/strong> beverages and fits perfectly underneath your Keurig!&nbsp;<\/p>"
+            }
+          },
+          "1487096123238-1": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "title": "Non-Slip Pad",
+              "text": "<p>Our high-grade, silicone non-slip pad ensures that your HOPSULATOR keeps a tight grip on any surface you set it on.&nbsp;<\/p>"
+            }
+          },
+          "1487203880329": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "title": "Arctic Adapter",
+              "text": "<p>Our Arctic Adapter allows you to fit 12oz cans in the TR&iacute;O and is filled with a proprietary freezing gel that will keep your favorite beverage up to <strong>5x<\/strong> colder than the leading competition. In a 1 hour test the TR&iacute;O&nbsp;actually <strong>lowered<\/strong> the temperature of the test beverage.&nbsp;<\/p>\r\n<p><\/p>\r\n<p>(<em>Bottles fit fine but they have some wiggle room. For an airtight fit, slip a neoprene koozie on the bottle and insert into the HOPSULATOR<\/em>)<\/p>"
+            }
+          },
+          "1487096123238-0": {
+            "type": "image",
+            "settings": {
+              "image": "",
+              "title": "Rugged Hand Grips",
+              "text": "<p>Our rugged hand grips ensure you can keep a hold in slippery situations (they also look really cool).<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1487203883400",
+          "1487096123238-1",
+          "1487203880329",
+          "1487096123238-0"
+        ],
+        "settings": {
+          "style": "default",
+          "title": "",
+          "subtitle": "",
+          "alignment": "left"
+        }
+      },
+      "module-contact-form": {
+        "type": "module-contact-form",
+        "settings": {
+          "style": "light"
+        }
+      },
+      "module-map": {
+        "type": "module-map",
+        "settings": {
+          "enable": false,
+          "location_name": "",
+          "location_address": "",
+          "api_key": ""
+        }
+      },
+      "1487447397246": {
+        "type": "home-featured-collection",
+        "settings": {
+          "style": "default",
+          "products_per_row": "3",
+          "product_rows": "1",
+          "title": "ACCESSORIES",
+          "subtitle": "Make your brumate even more interesting",
+          "button_text": "View All accessories",
+          "collection": "accessories"
+        }
+      },
+      "1487447489039": {
+        "type": "home-featured-collection",
+        "disabled": true,
+        "settings": {
+          "style": "default",
+          "products_per_row": "3",
+          "product_rows": "1",
+          "title": "BRUMATE PRODUCTS",
+          "subtitle": "",
+          "button_text": "View All Gift Sets",
+          "collection": "winesulator"
+        }
+      },
+      "1487656945376": {
+        "type": "home-full-width-media",
+        "disabled": true,
+        "settings": {
+          "style": "default",
+          "title": "",
+          "text": "",
+          "media_layout": "video-highlight",
+          "image": "",
+          "video_url": "",
+          "button_text": "",
+          "button_link": ""
+        }
+      },
+      "1530104916750": {
+        "type": "banner",
+        "settings": {
+          "banner-bg": "shopify:\/\/shop_images\/fullwidth-2nd.jpg",
+          "banner-mobile-bg": "shopify:\/\/shop_images\/home-mid.jpg",
+          "right-content": "left",
+          "content-color": "black-text",
+          "banner-title": "Brumate uncork’d",
+          "banner-subheading": "",
+          "banner-content": "<p>Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies, mauris, integer auctor turpis, turpis, tempor tristique phasellus ridiculus magna, non, adipiscing lacus turpis, turpis et massa? Dignissim ac dictumst? Proin eu! Tempor rhoncus, adipiscing augue? Tincidunt magna magna, lorem! Habitasse ut? Adipiscing urna ac, sagittis<\/p>",
+          "enable-button": true,
+          "button-text": "view products",
+          "button-link": "\/collections\/uncorkd-xl"
+        }
+      },
+      "1530168431388": {
+        "type": "banner",
+        "settings": {
+          "banner-bg": "shopify:\/\/shop_images\/fullwidth-3rd.jpg",
+          "banner-mobile-bg": "shopify:\/\/shop_images\/home-3rd.jpg",
+          "right-content": "left",
+          "content-color": "white-text",
+          "banner-title": "drink with <strong>style<\/strong>",
+          "banner-subheading": "Ac a penatibus ac<br> lundium natoque <br>tristique. Natoque. Sed.",
+          "banner-content": "",
+          "enable-button": true,
+          "button-text": "Read More",
+          "button-link": "shopify:\/\/blogs\/articles"
+        }
+      },
+      "1530173935775": {
+        "type": "client-logos",
+        "blocks": {
+          "1530173954702": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/this.png"
+            }
+          },
+          "1530173935775-1": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/life.png"
+            }
+          },
+          "1530173951668": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/surface.png"
+            }
+          },
+          "1530174064420": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/tred.png"
+            }
+          },
+          "1530173935775-0": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/faces.png"
+            }
+          },
+          "1530173949112": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/remix.png"
+            }
+          }
+        },
+        "block_order": [
+          "1530173954702",
+          "1530173935775-1",
+          "1530173951668",
+          "1530174064420",
+          "1530173935775-0",
+          "1530173949112"
+        ],
+        "settings": {
+          "text-box": "AS SEEN ON"
+        }
+      },
+      "1530179636394": {
+        "type": "side-image-with-text",
+        "blocks": {
+          "1530179636394-0": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-1.png",
+              "icon-text": "<p>Reduces your Carbon Footprint<\/p>"
+            }
+          },
+          "1530179655952": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-2.png",
+              "icon-text": "<p>Keeps your drinks at the perfect temperature<\/p>"
+            }
+          },
+          "1530179674329": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-3.png",
+              "icon-text": "<p>Works with Hot or Cold Beverages<\/p>"
+            }
+          },
+          "1530179697498": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-4.png",
+              "icon-text": "<p>Fits 1\/2 a Bottle of wine&nbsp;<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1530179636394-0",
+          "1530179655952",
+          "1530179674329",
+          "1530179697498"
+        ],
+        "settings": {}
+      },
+      "client-logos": {
+        "type": "client-logos",
+        "blocks": {
+          "1530192526973": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/this.png"
+            }
+          },
+          "1530192551599": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/life.png"
+            }
+          },
+          "1530192559069": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/surface.png"
+            }
+          },
+          "1530192571711": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/tred.png"
+            }
+          },
+          "1530192580536": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/faces.png"
+            }
+          },
+          "1530192592309": {
+            "type": "select",
+            "settings": {
+              "client-logo": "shopify:\/\/shop_images\/remix.png"
+            }
+          }
+        },
+        "block_order": [
+          "1530192526973",
+          "1530192551599",
+          "1530192559069",
+          "1530192571711",
+          "1530192580536",
+          "1530192592309"
+        ],
+        "settings": {
+          "text-box": "AS SEEN ON"
+        }
+      },
+      "module-faq": {
+        "type": "module-faq",
+        "blocks": {
+          "module-faq-0": {
+            "type": "faq",
+            "settings": {
+              "title": "Turpis etiam mauris placerat elementum nunc nunc etiam ac, arcu ?",
+              "text": "<p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut<\/p>"
+            }
+          },
+          "module-faq-1": {
+            "type": "faq",
+            "settings": {
+              "title": "Turpis etiam mauris placerat elementum nunc nunc etiam ac, arcu ?",
+              "text": "<p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut<\/p>"
+            }
+          },
+          "module-faq-2": {
+            "type": "faq",
+            "settings": {
+              "title": "Turpis etiam mauris placerat elementum nunc nunc etiam ac, arcu ?",
+              "text": "<p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut<\/p>"
+            }
+          },
+          "1530260113024": {
+            "type": "faq",
+            "settings": {
+              "title": "Turpis etiam mauris placerat elementum nunc nunc etiam ac, arcu ?",
+              "text": "<p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut<\/p>"
+            }
+          },
+          "1530260131310": {
+            "type": "faq",
+            "settings": {
+              "title": "Turpis etiam mauris placerat elementum nunc nunc etiam ac, arcu ?",
+              "text": "<p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "module-faq-0",
+          "module-faq-1",
+          "module-faq-2",
+          "1530260113024",
+          "1530260131310"
+        ],
+        "settings": {
+          "style": "default"
+        }
+      },
+      "1530601381292": {
+        "type": "categories-tabs",
+        "settings": {
+          "ctitle-box": "Brumate Products",
+          "fcid": "gift-sets",
+          "scid": "uncorkd-xl",
+          "tcid": "hopsulator-trio"
+        }
+      },
+      "side-image-with-text": {
+        "type": "side-image-with-text",
+        "blocks": {
+          "1530615811484": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/chilled.png",
+              "icon-text": "<p>keep your drink chilled<\/p>"
+            }
+          },
+          "1530615830532": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/fresh.png",
+              "icon-text": "<p>ALWAY FRESH<\/p>"
+            }
+          },
+          "1530615846798": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/carry.png",
+              "icon-text": "<p>EASY CARRY<\/p>"
+            }
+          },
+          "1530615860787": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/story.png",
+              "icon-text": "<p>KNOW&nbsp; OUR STORY<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1530615811484",
+          "1530615830532",
+          "1530615846798",
+          "1530615860787"
+        ],
+        "settings": {}
+      },
+      "home-featured-collection": {
+        "type": "home-featured-collection",
+        "settings": {
+          "style": "default",
+          "products_per_row": "3",
+          "product_rows": "1",
+          "title": "ENHANCE WITH ACCESSORIES",
+          "subtitle": "Make your brumate even more interesting",
+          "button_text": "View all accessories",
+          "collection": "accessories"
+        }
+      },
+      "enhance-accessories": {
+        "type": "enhance-accessories",
+        "settings": {
+          "title": "ENHANCE WITH ACCESSORIES",
+          "subtitle": "MAKE YOUR BRUMATE EVEN MORE INTRESTING",
+          "col_access": "accessories"
+        }
+      },
+      "policy-section": {
+        "type": "policy-section",
+        "blocks": {
+          "1530772133797": {
+            "type": "select",
+            "settings": {
+              "black-icon": "shopify:\/\/shop_images\/padlock.png",
+              "white-icon": "shopify:\/\/shop_images\/padlock_white.png",
+              "policy-title": "Privacy Policy",
+              "policy-sub-title": "<p>Privacy policies are mandated by law in many countries and they're also a great way to build customers' trust.<\/p>\n<p>scroll Down to see&nbsp; Privacy Policy<\/p>",
+              "policy-content": "<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>\n<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>"
+            }
+          },
+          "1530773664298": {
+            "type": "select",
+            "settings": {
+              "black-icon": "shopify:\/\/shop_images\/return_ca27a031-1842-49b1-9042-47c2c89ebfc7.png",
+              "white-icon": "shopify:\/\/shop_images\/return_white_f437940b-9f26-4d6f-8f44-21403109ac26.png",
+              "policy-title": "Return Policy",
+              "policy-sub-title": "<p>Privacy policies are mandated by law in many countries and they're also a great way to build customers' trust.<\/p>\n<p>Scroll Down to see&nbsp; Privacy Policy<\/p>",
+              "policy-content": "<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>\n<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>"
+            }
+          },
+          "1530774485461": {
+            "type": "select",
+            "settings": {
+              "black-icon": "shopify:\/\/shop_images\/padlock.png",
+              "white-icon": "shopify:\/\/shop_images\/padlock_white.png",
+              "policy-title": "Terms and Conditions",
+              "policy-sub-title": "<p>Privacy policies are mandated by law in many countries and they're also a great way to build customers' trust.<\/p>\n<p>Scroll Down to see&nbsp; Privacy Policy<\/p>",
+              "policy-content": "<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>\n<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in scelerisque non adipiscing diam lundium. Placerat ultricies vut tortor aenean elit rhoncus odio magnis, adipiscing nunc aenean dis enim diam augue auctor turpis magna ut, penatibus ac penatibus integer, non etiam rhoncus nisi ac auctor cursus tristique pulvinar tristique, porta, integer elit duis in elit ridiculus augue nunc a, dis eros ultrices porta? Rhoncus sagittis urna nunc, mauris aenean pid! Augue integer augue dignissim integer, hac mid, enim elit. Ultrices in et sed turpis odio turpis et proin nisi, integer magna mattis a porttitor tristique natoque placerat lorem, turpis.<\/p>\n<p>A, arcu tristique porttitor, aliquet et eros nisi turpis? Porttitor montes elementum dis penatibus nec dapibus mid cursus eu augue pid! Dis sit ac non porttitor turpis lundium eros in ac porta cum parturient pellentesque lorem proin magnis adipiscing, elementum, mus a a hac a magna, ultrices, aenean mus montes nec ac proin parturient nisi odio eros ultrices hac adipiscing tortor aliquet. Dolor! Etiam sed etiam facilisis scelerisque phasellus, scelerisque non, adipiscing scelerisque scelerisque. Pellentesque tortor proin sagittis lundium eu et hac integer tristique facilisis mid, cum et ridiculus sagittis pulvinar scelerisque adipiscing quis a urna augue pulvinar parturient sit, diam habitasse urna, odio, lorem in augue tempor vut lacus? Aliquam ultrices magnis? Augue nec enim rhoncus cursus turpis.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1530772133797",
+          "1530773664298",
+          "1530774485461"
+        ],
+        "settings": {}
+      },
+      "banner": {
+        "type": "banner",
+        "settings": {
+          "banner-bg": "shopify:\/\/shop_images\/shipping-mid.jpg",
+          "banner-mobile-bg": "",
+          "right-content": "left",
+          "content-color": "white-text",
+          "banner-title": "Safe Shipping Option",
+          "banner-subheading": "",
+          "banner-content": "<p>Porta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus curPorta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus cursus, adipiscing nisi magna elementum! Sit vut, montes mid, diam sociis nisi ridiculus cum arcu ultrices rhoncus porta eu!<\/p>",
+          "enable-button": false,
+          "button-text": "Read More",
+          "button-link": ""
+        }
+      },
+      "about-us-header": {
+        "type": "about-us-header",
+        "settings": {
+          "banner-title": "BRUMATE",
+          "banner-subtitle": "Its all in the design",
+          "banner-image": "shopify:\/\/shop_images\/about-us.jpg",
+          "banner-image-mobile": "shopify:\/\/shop_images\/about_us.jpg"
+        }
+      },
+      "single-banner": {
+        "type": "single-banner",
+        "settings": {
+          "single-banner-bg": "shopify:\/\/shop_images\/faq-bottom.jpg"
+        }
+      },
+      "page-content-section": {
+        "type": "page-content-section",
+        "settings": {
+          "page-content": "<p>Magna dis duis. Integer aliquet et. Vel nunc, pulvinar porttitor et, est tincidunt ultricies in sagittis! Phasellus mattis turpis tristique, nec amet turpis massa, nisi ridiculus amet tempor? In porttitor, turpis turpis aenean enim et, penatibus, habitasse amet? Cras dignissim, ut aliquet sit integer scelerisque vut amet proin lacus cras amet dolor ultrices cum mid et magna phasellus nunc magna, natoque lundium?<\/p>"
+        }
+      },
+      "three-image-column": {
+        "type": "three-image-column",
+        "blocks": {
+          "1531139553881": {
+            "type": "select",
+            "settings": {
+              "multi-images": "shopify:\/\/shop_images\/p1.jpg"
+            }
+          },
+          "1531139578738": {
+            "type": "select",
+            "settings": {
+              "multi-images": "shopify:\/\/shop_images\/p2.jpg"
+            }
+          },
+          "1531139659097": {
+            "type": "select",
+            "settings": {
+              "multi-images": "shopify:\/\/shop_images\/p3.jpg"
+            }
+          }
+        },
+        "block_order": [
+          "1531139553881",
+          "1531139578738",
+          "1531139659097"
+        ],
+        "settings": {}
+      },
+      "content-half-image-section": {
+        "type": "content-half-image-section",
+        "settings": {
+          "title": "Brumate EXPERIENCE",
+          "content": "<p>Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies, mauris, integer auctor turpis, turpis, tempor tristique phasellus ridiculus magna, non, adipiscing lacus turpis, turpis et massa? Dignissim ac dictumst? Proin eu! Tempor rhoncus, adipiscing augue? Tincidunt magna magna, lorem! Habitasse ut? Adipiscing urna ac, sagittis<\/p>",
+          "half-image": "shopify:\/\/shop_images\/about_us-2.jpg"
+        }
+      },
+      "contact-us-address": {
+        "type": "contact-us-address",
+        "blocks": {
+          "1531143115691": {
+            "type": "select",
+            "settings": {
+              "topics-text": "New ideas",
+              "topics-url": "#"
+            }
+          },
+          "1531143164240": {
+            "type": "select",
+            "settings": {
+              "topics-text": "Sales Ambassador",
+              "topics-url": "#"
+            }
+          },
+          "1531143173902": {
+            "type": "select",
+            "settings": {
+              "topics-text": "Wholesale",
+              "topics-url": "#"
+            }
+          },
+          "1531143198389": {
+            "type": "select",
+            "settings": {
+              "topics-text": "Product Maintenance",
+              "topics-url": "#"
+            }
+          }
+        },
+        "block_order": [
+          "1531143115691",
+          "1531143164240",
+          "1531143173902",
+          "1531143198389"
+        ],
+        "settings": {
+          "links-title": "Hot topics of discussion",
+          "address-title": "Contact us",
+          "address": "<p>2726 Rand Road Indianapolis, IN 46241<\/p>",
+          "email": "sales@brumate.com",
+          "timings": "Monday - Friday from 9:00 a.m. to 5:00 p.m. Eastern Time."
+        }
+      },
+      "banner-faq": {
+        "type": "banner-faq",
+        "settings": {
+          "black-banner-title": "",
+          "overlay-banner": "overlay-black",
+          "top-banner-large": "Normal-banner",
+          "banner-top-bg": "shopify:\/\/shop_images\/faq.jpg"
+        }
+      },
+      "banner-wholesale": {
+        "type": "banner-wholesale",
+        "settings": {
+          "black-banner-title": "",
+          "overlay-banner": "overlay-black",
+          "top-banner-large": "Normal-banner",
+          "banner-top-bg": "shopify:\/\/shop_images\/wholesale.jpg"
+        }
+      },
+      "banner-wholesale-bottom": {
+        "type": "banner-wholesale-bottom",
+        "settings": {
+          "banner-bg": "shopify:\/\/shop_images\/faq-bottom.jpg",
+          "right-content": "left",
+          "content-color": "black-text",
+          "banner-title": "Wholesale Program Who is it for?",
+          "banner-subheading": "",
+          "banner-content": "<p>Porta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus curPorta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus cursus, adipiscing nisi magna elementum! Sit vut, montes mid, diam sociis nisi ridiculus cum arcu ultrices rhoncus porta eu!<\/p>",
+          "enable-button": false,
+          "button-text": "Read More",
+          "button-link": ""
+        }
+      },
+      "content-wholesale": {
+        "type": "content-wholesale",
+        "settings": {
+          "wholesale-title": "Join the fastest growing drinkware brand in the world",
+          "wholesale-content": "<p>Porta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus curPorta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus cursus, adipiscing nisi magna elementum! Sit vut, montes mid, diam sociis nisi ridiculus cum arcu ultrices rhoncus porta eu!<\/p>"
+        }
+      },
+      "contact-wholesale": {
+        "type": "contact-wholesale",
+        "settings": {
+          "wholesale-title": "CONVINCED? WANT TO JOIN?",
+          "wholesale-subtitle": "Just fill in the form below",
+          "wholesale-content": "<p>Porta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis.<\/p>"
+        }
+      },
+      "top-icon-with-text": {
+        "type": "top-icon-with-text",
+        "blocks": {
+          "1531207084437": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-1.png",
+              "icon-text": "<p>Fast Shipping<\/p>"
+            }
+          },
+          "1531207089831": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-2.png",
+              "icon-text": "<p>Exclusive Access<\/p>"
+            }
+          },
+          "1531207103628": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-3.png",
+              "icon-text": "<p>High Margins<\/p>"
+            }
+          },
+          "1531207112220": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-4.png",
+              "icon-text": "<p>Free Freight<\/p>"
+            }
+          },
+          "1531207130676": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-5.png",
+              "icon-text": "<p>Over 250k Customers and Counting<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1531207084437",
+          "1531207089831",
+          "1531207103628",
+          "1531207112220",
+          "1531207130676"
+        ],
+        "settings": {
+          "icon-title": "The perks"
+        }
+      },
+      "banner-shipping": {
+        "type": "banner-shipping",
+        "settings": {
+          "black-banner-title": "",
+          "top-banner-large": "Normal-banner"
+        }
+      },
+      "shipping-icons": {
+        "type": "shipping-icons",
+        "blocks": {
+          "1531209876215": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/home.png",
+              "icon-title": "Ship to your <br> nearest store",
+              "icon-paragraph": "<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in<\/p>"
+            }
+          },
+          "1531209909852": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/truck.png",
+              "icon-title": "Ship to your <br> House",
+              "icon-paragraph": "<p>Urna purus? Sagittis elementum phasellus in ac ultrices parturient pulvinar auctor, ultrices. Ac a magnis augue velit pid odio sed sed in, mus! Urna? Pulvinar placerat nec elit augue aliquam in<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1531209876215",
+          "1531209909852"
+        ],
+        "settings": {
+          "main-title": "Brumate ships to your home",
+          "main-subtext": "<p>Porta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi natoque integer nunc? Dictumst duis, vel tristique. Purus curPorta et scelerisque a habitasse in scelerisque nec lundium porta mauris a rhoncus habitasse nisi<\/p>"
+        }
+      },
+      "contact-us-social-section": {
+        "type": "contact-us-social-section",
+        "blocks": {
+          "1531214725580": {
+            "type": "text",
+            "settings": {
+              "social-icon": "fa-facebook-f",
+              "social-link": "https:\/\/www.facebook.com\/"
+            }
+          },
+          "1531214868847": {
+            "type": "text",
+            "settings": {
+              "social-icon": "fa-twitter",
+              "social-link": "https:\/\/twitter.com\/"
+            }
+          },
+          "1531214942926": {
+            "type": "text",
+            "settings": {
+              "social-icon": "fa-google-plus-g",
+              "social-link": "https:\/\/plus.google.com"
+            }
+          },
+          "1531214988380": {
+            "type": "text",
+            "settings": {
+              "social-icon": "fa-youtube",
+              "social-link": "https:\/\/www.youtube.com\/"
+            }
+          }
+        },
+        "block_order": [
+          "1531214725580",
+          "1531214868847",
+          "1531214942926",
+          "1531214988380"
+        ],
+        "settings": {
+          "title": "LETS CONNECT",
+          "subtitle": "And Shape the future",
+          "bg-image": "shopify:\/\/shop_images\/conect_ban.jpg",
+          "bg-image-mobile": "shopify:\/\/shop_images\/contact-bottom.jpg"
+        }
+      },
+      "shipping-list": {
+        "type": "shipping-list",
+        "blocks": {
+          "1531215226268": {
+            "type": "select",
+            "settings": {
+              "list-text": "VIRGINIA",
+              "list-url": ""
+            }
+          },
+          "1531215248285": {
+            "type": "select",
+            "settings": {
+              "list-text": "CALIFORNIA",
+              "list-url": ""
+            }
+          },
+          "1531216381098": {
+            "type": "select",
+            "settings": {
+              "list-text": "FLORIDA",
+              "list-url": ""
+            }
+          },
+          "1531216398242": {
+            "type": "select",
+            "settings": {
+              "list-text": "TEXAS",
+              "list-url": ""
+            }
+          },
+          "1531216406205": {
+            "type": "select",
+            "settings": {
+              "list-text": "PENNYSLVANIA",
+              "list-url": ""
+            }
+          },
+          "1531216412660": {
+            "type": "select",
+            "settings": {
+              "list-text": "MICHIGAN",
+              "list-url": ""
+            }
+          },
+          "1531216420339": {
+            "type": "select",
+            "settings": {
+              "list-text": "VIRGINIA",
+              "list-url": ""
+            }
+          },
+          "1531216427377": {
+            "type": "select",
+            "settings": {
+              "list-text": "CALIFORNIA",
+              "list-url": ""
+            }
+          },
+          "1531216442664": {
+            "type": "select",
+            "settings": {
+              "list-text": "FLORIDA",
+              "list-url": ""
+            }
+          },
+          "1531216460786": {
+            "type": "select",
+            "settings": {
+              "list-text": "TEXAS",
+              "list-url": ""
+            }
+          },
+          "1531216466363": {
+            "type": "select",
+            "settings": {
+              "list-text": "PENNYSLVANIA",
+              "list-url": ""
+            }
+          },
+          "1531216472414": {
+            "type": "select",
+            "settings": {
+              "list-text": "MICHIGAN",
+              "list-url": ""
+            }
+          },
+          "1531216477942": {
+            "type": "select",
+            "settings": {
+              "list-text": "VIRGINIA",
+              "list-url": ""
+            }
+          },
+          "1531216488915": {
+            "type": "select",
+            "settings": {
+              "list-text": "CALIFORNIA",
+              "list-url": ""
+            }
+          },
+          "1531216493598": {
+            "type": "select",
+            "settings": {
+              "list-text": "FLORIDA",
+              "list-url": ""
+            }
+          },
+          "1531216499649": {
+            "type": "select",
+            "settings": {
+              "list-text": "TEXAS",
+              "list-url": ""
+            }
+          },
+          "1531216505173": {
+            "type": "select",
+            "settings": {
+              "list-text": "PENNYSLVANIA",
+              "list-url": ""
+            }
+          },
+          "1531216511294": {
+            "type": "select",
+            "settings": {
+              "list-text": "MICHIGAN",
+              "list-url": ""
+            }
+          },
+          "1531216515353": {
+            "type": "select",
+            "settings": {
+              "list-text": "VIRGINIA",
+              "list-url": ""
+            }
+          },
+          "1531216521520": {
+            "type": "select",
+            "settings": {
+              "list-text": "CALIFORNIA",
+              "list-url": ""
+            }
+          },
+          "1531216525846": {
+            "type": "select",
+            "settings": {
+              "list-text": "FLORIDA",
+              "list-url": ""
+            }
+          },
+          "1531216528149": {
+            "type": "select",
+            "settings": {
+              "list-text": "TEXAS",
+              "list-url": ""
+            }
+          },
+          "1531216537987": {
+            "type": "select",
+            "settings": {
+              "list-text": "PENNYSLVANIA",
+              "list-url": ""
+            }
+          },
+          "1531216542352": {
+            "type": "select",
+            "settings": {
+              "list-text": "MICHIGAN",
+              "list-url": ""
+            }
+          }
+        },
+        "block_order": [
+          "1531215226268",
+          "1531215248285",
+          "1531216381098",
+          "1531216398242",
+          "1531216406205",
+          "1531216412660",
+          "1531216420339",
+          "1531216427377",
+          "1531216442664",
+          "1531216460786",
+          "1531216466363",
+          "1531216472414",
+          "1531216477942",
+          "1531216488915",
+          "1531216493598",
+          "1531216499649",
+          "1531216505173",
+          "1531216511294",
+          "1531216515353",
+          "1531216521520",
+          "1531216525846",
+          "1531216528149",
+          "1531216537987",
+          "1531216542352"
+        ],
+        "settings": {
+          "title": "WE CURRENTLY SHIP TO",
+          "sub-subtext": "<p>FIND YOUR STATE BELOW<\/p>"
+        }
+      },
+      "banner-ambassador": {
+        "type": "banner-ambassador",
+        "settings": {
+          "black-banner-title": "",
+          "overlay-banner": "overlay-black",
+          "top-banner-large": "top-banner-small",
+          "banner-top-bg": "shopify:\/\/shop_images\/Ambassador.jpg",
+          "banner-top-bg-mobile": "shopify:\/\/shop_images\/become_ambassador.jpg"
+        }
+      },
+      "content-ambassador": {
+        "type": "content-ambassador",
+        "settings": {
+          "wholesale-title": "Learn more about our Ambassador program",
+          "wholesale-content": "<p>Egestas lundium. Ut integer parturient turpis nec in placerat augue, sed cum, vel turpis rhoncus a velit aliquet, vut? Cursus elit augue mus. Ultrices? Parturient eu quis elementum turpis facilisis, phasellus nunc enim elit tincidunt magnis, in porta turpis cum est est pellentesque phasellus, mid sed purus tempor, phasellus, ut dignissim elementum penatibus arc<\/p>"
+        }
+      },
+      "top-icons-ambassador": {
+        "type": "top-icons-ambassador",
+        "blocks": {
+          "1531223516436": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-1.png",
+              "icon-text": "<p>Fast Shipping<\/p>"
+            }
+          },
+          "1531223530663": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-2.png",
+              "icon-text": "<p>Exclusive Access<\/p>"
+            }
+          },
+          "1531223544836": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-3.png",
+              "icon-text": "<p>High Margins<\/p>"
+            }
+          },
+          "1531223561530": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-4.png",
+              "icon-text": "<p>Free Freight<\/p>"
+            }
+          },
+          "1531223574718": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/become-ambassador-icon-5.png",
+              "icon-text": "<p>Over 250k Customers and Counting<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1531223516436",
+          "1531223530663",
+          "1531223544836",
+          "1531223561530",
+          "1531223574718"
+        ],
+        "settings": {
+          "icon-title": "BeCOME AN AMBASSADOR",
+          "sub-title": "<p>Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies, mauris, integer auctor turpis<\/p>"
+        }
+      },
+      "bottom-ambassador": {
+        "type": "bottom-ambassador",
+        "settings": {
+          "grop-title": "FACEBOOK",
+          "subtitle": "AMBASSADOR <br> GROUP",
+          "amb-content": "AC A PENATIBUS AC  <br> LUNDIUM NATOQUE <br>TRISTIQUE. NATOQUE. SED.",
+          "inquire-text": "inquire",
+          "inquire-link": "#",
+          "amb-img": "shopify:\/\/shop_images\/fb-side.jpg",
+          "amb-img-mobile": "shopify:\/\/shop_images\/become_ambassador2.jpg"
+        }
+      },
+      "banner-help": {
+        "type": "banner-help",
+        "settings": {
+          "black-banner-title": "NEED HELP?",
+          "overlay-banner": "overlay-black",
+          "top-banner-large": "top-banner-large",
+          "banner-top-bg": "shopify:\/\/shop_images\/bnx.jpg",
+          "enable-search": "enable-search"
+        }
+      },
+      "find-help-section": {
+        "type": "find-help-section",
+        "settings": {
+          "left-image": "shopify:\/\/shop_images\/we.jpg",
+          "title": "Find Help ?",
+          "main-title": "HAVE YOU TRIED THE NEW CUSOMER SERVICE CHAT",
+          "content": "Egestas lundium. Ut integer parturient turpis nec in placerat augue, sed cum, vel turpis rhoncus a velit aliquet, vut? Cursus elit augue mus. Ultrices"
+        }
+      },
+      "template-article": {
+        "type": "template-article",
+        "settings": {
+          "show_share_buttons": true
+        }
+      },
+      "content-careers": {
+        "type": "content-careers",
+        "settings": {
+          "careers-title": "Lets build great things together",
+          "careers-content": "<p>Egestas lundium. Ut integer parturient turpis nec in placerat augue, sed cum, vel turpis rhoncus a velit aliquet, vut? Cursus elit augue mus. Ultrices?<\/p>"
+        }
+      },
+      "top-icons-careers": {
+        "type": "top-icons-careers",
+        "blocks": {
+          "1531293044539": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/ambassador-1.png",
+              "icon-text": "<p>$20 credit earned for every referral you drive<\/p>"
+            }
+          },
+          "1531293068442": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/ambassador-2.png",
+              "icon-text": "<p>15% lifetime discount<\/p>"
+            }
+          },
+          "1531293089046": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/ambassador-3.png",
+              "icon-text": "<p>Exclusive access to our Facebook group<\/p>"
+            }
+          },
+          "1531293112523": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/ambassador-4.png",
+              "icon-text": "<p>Exclusive access to upcoming product releases<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1531293044539",
+          "1531293068442",
+          "1531293089046",
+          "1531293112523"
+        ],
+        "settings": {
+          "careers-title": "Everything you need",
+          "careers-content": "<p>Egestas lundium. Ut integer parturient turpis nec in placerat augue, sed cum, vel turpis rhoncus a velit aliquet, vut? Cursus elit augue mus. Ultrices?<\/p>",
+          "icon-title": "and, there are great perks"
+        }
+      },
+      "slider-careers": {
+        "type": "slider-careers",
+        "blocks": {
+          "1531295153065": {
+            "type": "select",
+            "settings": {
+              "slider-bg": "shopify:\/\/shop_images\/sl1.png",
+              "slider-text": "We have an amazing office enviroment"
+            }
+          },
+          "1531295565928": {
+            "type": "select",
+            "settings": {
+              "slider-bg": "shopify:\/\/shop_images\/sl1.png",
+              "slider-text": "We have an amazing office enviroment"
+            }
+          }
+        },
+        "block_order": [
+          "1531295153065",
+          "1531295565928"
+        ],
+        "settings": {}
+      },
+      "single-banner-careers": {
+        "type": "single-banner-careers",
+        "settings": {
+          "single-bg": "shopify:\/\/shop_images\/asd.png"
+        }
+      },
+      "side-image-with-text-collection": {
+        "type": "side-image-with-text-collection",
+        "blocks": {
+          "1531389742446": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-1.png",
+              "icon-text": "<p>REDUCES YOUR CARBON FOOTPRINT<\/p>"
+            }
+          },
+          "1531389789571": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-2.png",
+              "icon-text": "<p>KEEPS YOUR DRINKS AT THE PERFECT TEMPERATURE<\/p>"
+            }
+          },
+          "1531389812636": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-3.png",
+              "icon-text": "<p>WORKS WITH HOT OR COLD BEVERAGES<\/p>"
+            }
+          },
+          "1531389830902": {
+            "type": "select",
+            "settings": {
+              "img-icon": "shopify:\/\/shop_images\/icon-4.png",
+              "icon-text": "<p>FITS 1\/2 A BOTTLE OF WINE<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1531389742446",
+          "1531389789571",
+          "1531389812636",
+          "1531389830902"
+        ],
+        "settings": {}
+      },
+      "collection-list-section": {
+        "type": "collection-list-section",
+        "blocks": {
+          "1531481669331": {
+            "type": "select",
+            "settings": {
+              "collection_id": "gift-sets"
+            }
+          },
+          "1531481688748": {
+            "type": "select",
+            "settings": {
+              "collection_id": "uncorkd-xl"
+            }
+          },
+          "1531481700684": {
+            "type": "select",
+            "settings": {
+              "collection_id": "hopsulator-trio"
+            }
+          },
+          "1531481716757": {
+            "type": "select",
+            "settings": {
+              "collection_id": "accessories"
+            }
+          },
+          "1531481726972": {
+            "type": "select",
+            "settings": {
+              "collection_id": "glitter-series"
+            }
+          },
+          "1531481732195": {
+            "type": "select",
+            "settings": {
+              "collection_id": "marble-series"
+            }
+          },
+          "1531481744963": {
+            "type": "select",
+            "settings": {
+              "collection_id": "unwined-inifinty-glass"
+            }
+          },
+          "1531481753123": {
+            "type": "select",
+            "settings": {
+              "collection_id": "winesulator"
+            }
+          }
+        },
+        "block_order": [
+          "1531481669331",
+          "1531481688748",
+          "1531481700684",
+          "1531481716757",
+          "1531481726972",
+          "1531481732195",
+          "1531481744963",
+          "1531481753123"
+        ],
+        "settings": {
+          "create_own_gift": "wholesale"
+        }
+      },
+      "happy-customers-section": {
+        "type": "happy-customers-section",
+        "blocks": {
+          "1531486125527": {
+            "type": "select",
+            "settings": {
+              "happy-image-id": "shopify:\/\/shop_images\/d1.png"
+            }
+          },
+          "1531486151968": {
+            "type": "select",
+            "settings": {
+              "happy-image-id": "shopify:\/\/shop_images\/d2.png"
+            }
+          },
+          "1531486181479": {
+            "type": "select",
+            "settings": {
+              "happy-image-id": "shopify:\/\/shop_images\/d3.png"
+            }
+          },
+          "1531486197221": {
+            "type": "select",
+            "settings": {
+              "happy-image-id": "shopify:\/\/shop_images\/d4.png"
+            }
+          }
+        },
+        "block_order": [
+          "1531486125527",
+          "1531486151968",
+          "1531486181479",
+          "1531486197221"
+        ],
+        "settings": {
+          "section-title": "Happy Customers with their Brumate Product"
+        }
+      },
+      "list-collection-banner": {
+        "type": "list-collection-banner",
+        "settings": {
+          "banner-top-clist-bg": "shopify:\/\/shop_images\/collection-main_a095580b-57ea-485b-a19b-bb0495bdeaaf.jpg",
+          "mbanner-top-clist-bg": "shopify:\/\/shop_images\/product_collection_-_main.jpg",
+          "clist-title": "BRUMATE<span>Products<\/span>"
+        }
+      },
+      "press-banner-section": {
+        "type": "press-banner-section",
+        "settings": {
+          "banner-top-press-bg": "shopify:\/\/shop_images\/in-the-press_0c1a9586-cc0f-4f7f-8892-11c0a2e60012.jpg",
+          "pressbanner-title": "In the press"
+        }
+      },
+      "press-single-banner": {
+        "type": "press-single-banner",
+        "settings": {
+          "banner-single-press-bg": "shopify:\/\/shop_images\/press-bottom-min_0d34d1d4-5c45-468c-8aa4-e7fc4bd30caa.jpg"
+        }
+      },
+      "press-form": {
+        "type": "press-form",
+        "settings": {
+          "pressform-title": "Feature Brumate in your Media"
+        }
+      },
+      "about-form": {
+        "type": "about-form",
+        "settings": {}
+      },
+      "gift-top-banner": {
+        "type": "gift-top-banner",
+        "settings": {
+          "banner-top-press-bg": "shopify:\/\/shop_images\/create-gift-banner.jpg",
+          "pressbanner-title": "Create your own<br><b>GIFT SET<\/b>"
+        }
+      },
+      "gift-banner": {
+        "type": "gift-banner",
+        "settings": {
+          "banner-bg": "shopify:\/\/shop_images\/full-width_mid.jpg",
+          "banner-mobile-bg": "",
+          "right-content": "left",
+          "content-color": "black-text",
+          "banner-title": "Show your love<br>with our Gift Sets",
+          "banner-subheading": "",
+          "banner-content": "<p>Magnis eros tempor et, dolor parturient aenean adipiscing! Habitasse. Est augue dapibus. Amet hac a dolor est dignissim risus dolor vut proin mus enim dolor sit porttitor ultrices vel placerat mid eros porta integer integer.&nbsp;<\/p>",
+          "enable-button": false,
+          "button-text": "Read More",
+          "button-link": ""
+        }
+      },
+      "gift-choose-product": {
+        "type": "gift-choose-product",
+        "settings": {}
+      },
+      "gift-set-section": {
+        "type": "gift-set-section",
+        "settings": {}
+      }
+    },
+    "content_for_index": [
+      "1530179636394",
+      "1487656945376",
+      "home-text-columns-with-icons",
+      "home-alternating-content",
+      "home-product-focus",
+      "home-full-width-media",
+      "1487096123238",
+      "home-testimonials",
+      "1530601381292",
+      "1487447489039",
+      "1530104916750",
+      "1487447397246",
+      "1530168431388",
+      "1487090293580",
+      "1530173935775"
+    ]
+  },
+  "presets": {
+    "Cool": {
+      "theme-primary-color": "#0381A2",
+      "theme-primary-color-hover": "#0288b5",
+      "theme-secondary-color": "#554d99",
+      "heading-text-color": "#000000",
+      "body-text-color": "#797676",
+      "border-color": "#e3e3e3",
+      "body-background-color": "#fff",
+      "body-font": "Roboto, sans-serif",
+      "body-font-weight": "300",
+      "heading-font": "'Open Sans', sans-serif",
+      "heading-font-weight": "300",
+      "primary-button-font": "'Open Sans', sans-serif",
+      "primary-button-font-weight": "700",
+      "sections": {
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": true,
+            "layout": "full-window",
+            "transition": "transition-fade",
+            "autoplay": true
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            },
+            "alternating-content-2": {
+              "type": "video",
+              "settings": {
+                "style": "light"
+              }
+            },
+            "alternating-content-3": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            }
+          },
+          "block_order": [
+            "alternating-content-1",
+            "alternating-content-2",
+            "alternating-content-3"
+          ],
+          "settings": {}
+        },
+        "home-product-focus": {
+          "type": "home-product-focus",
+          "blocks": {
+            "home-product-focus-1": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-2": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-3": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-4": {
+              "type": "feature",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-product-focus-1",
+            "home-product-focus-2",
+            "home-product-focus-3",
+            "home-product-focus-4"
+          ],
+          "settings": {
+            "show_product_image": true,
+            "style": "light",
+            "title": "Product focus",
+            "subtitle": "Highlight your product's finest features."
+          }
+        },
+        "home-images-with-text": {
+          "type": "home-images-with-text",
+          "blocks": {
+            "images-with-text-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "images-with-text-2": {
+              "type": "image",
+              "settings": {}
+            },
+            "images-with-text-3": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "images-with-text-1",
+            "images-with-text-2",
+            "images-with-text-3"
+          ],
+          "settings": {
+            "style": "default",
+            "alignment": "left"
+          }
+        },
+        "home-full-width-media": {
+          "type": "home-full-width-media",
+          "settings": {
+            "style": "default",
+            "title": "Full width media",
+            "text": "<p>Display a full width feature that can contain a large image, or video, and an optional call to action button.<\/p>",
+            "media_layout": "video-highlight",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "home-text-columns-with-icons": {
+          "type": "home-text-columns-with-icons",
+          "blocks": {
+            "text-column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text-column-1",
+            "text-column-2",
+            "text-column-3"
+          ],
+          "settings": {
+            "style": "default",
+            "title": "Text columns with icons"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default",
+            "title": "Testimonials"
+          }
+        },
+        "home-blog-posts": {
+          "type": "home-blog-posts",
+          "settings": {
+            "style": "light",
+            "posts_to_show": "3",
+            "title": "Blog posts"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "default"
+          }
+        },
+        "general-social-feeds": {
+          "type": "general-social-feeds",
+          "blocks": {
+            "widget-block-1": {
+              "type": "instagram",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "widget-block-1"
+          ],
+          "settings": {}
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "blocks": {
+            "footer-block-1": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu"
+              }
+            },
+            "footer-block-2": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            }
+          },
+          "block_order": [
+            "footer-block-1",
+            "footer-block-2"
+          ],
+          "settings": {
+            "style": "default",
+            "enable_borders": true
+          }
+        }
+      },
+      "content_for_index": [
+        "home-alternating-content",
+        "home-product-focus",
+        "home-images-with-text",
+        "home-full-width-media",
+        "home-text-columns-with-icons",
+        "home-testimonials",
+        "home-blog-posts"
+      ]
+    },
+    "Fresh": {
+      "theme-primary-color": "#857b58",
+      "theme-primary-color-hover": "#6f6850",
+      "theme-secondary-color": "#4e7f74",
+      "heading-text-color": "#191919",
+      "body-text-color": "#5e5e5e",
+      "border-color": "#e6e6e6",
+      "body-background-color": "#ffffff",
+      "body-font": "Roboto Condensed, sans-serif",
+      "body-font-weight": "300",
+      "heading-font": "'Playfair Display', serif",
+      "heading-font-weight": "700",
+      "primary-button-font": "Roboto, sans-serif",
+      "primary-button-font-weight": "700",
+      "sections": {
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            },
+            "slide-2": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1",
+            "slide-2"
+          ],
+          "settings": {
+            "enable": true,
+            "layout": "full-window",
+            "transition": "transition-slide",
+            "autoplay": false
+          }
+        },
+        "home-featured-collection": {
+          "type": "home-featured-collection",
+          "settings": {
+            "style": "default",
+            "products_per_row": "3",
+            "product_rows": "2",
+            "title": "Featured collection"
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            },
+            "alternating-content-2": {
+              "type": "video",
+              "settings": {
+                "style": "light"
+              }
+            },
+            "alternating-content-3": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            }
+          },
+          "block_order": [
+            "alternating-content-1",
+            "alternating-content-2",
+            "alternating-content-3"
+          ],
+          "settings": {}
+        },
+        "home-text-columns-with-icons": {
+          "type": "home-text-columns-with-icons",
+          "blocks": {
+            "text-column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text-column-1",
+            "text-column-2",
+            "text-column-3"
+          ],
+          "settings": {
+            "style": "default",
+            "title": "Text columns with icons"
+          }
+        },
+        "home-full-width-media": {
+          "type": "home-full-width-media",
+          "settings": {
+            "style": "default",
+            "title": "Full width media",
+            "text": "<p>Display a full width feature that can contain a large image, or video, and an optional call to action button.<\/p>",
+            "media_layout": "video-highlight",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default",
+            "title": "Testimonials"
+          }
+        },
+        "home-blog-posts": {
+          "type": "home-blog-posts",
+          "settings": {
+            "style": "light",
+            "posts_to_show": "3",
+            "title": "Blog posts"
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "default"
+          }
+        },
+        "general-social-feeds": {
+          "type": "general-social-feeds",
+          "blocks": {
+            "widget-block-1": {
+              "type": "twitter",
+              "settings": {
+                "style": "gradient"
+              }
+            }
+          },
+          "block_order": [
+            "widget-block-1"
+          ],
+          "settings": {}
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "blocks": {
+            "footer-block-1": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu"
+              }
+            },
+            "footer-block-2": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            }
+          },
+          "block_order": [
+            "footer-block-1",
+            "footer-block-2"
+          ],
+          "settings": {
+            "style": "light",
+            "enable_borders": true,
+            "show_logo": true
+          }
+        }
+      },
+      "content_for_index": [
+        "home-featured-collection",
+        "home-alternating-content",
+        "home-text-columns-with-icons",
+        "home-full-width-media",
+        "home-testimonials",
+        "home-blog-posts"
+      ]
+    },
+    "Bold": {
+      "theme-primary-color": "#ea2931",
+      "theme-primary-color-hover": "#d1282f",
+      "theme-secondary-color": "#fd8311",
+      "heading-text-color": "#161a1c",
+      "body-text-color": "#7f7f7f",
+      "border-color": "#e3e3e3",
+      "body-background-color": "#ffffff",
+      "body-font": "'Source Sans Pro', sans-serif",
+      "body-font-weight": "300",
+      "heading-font": "Montserrat, sans-serif",
+      "heading-font-weight": "400",
+      "primary-button-font": "'Source Sans Pro', sans-serif",
+      "primary-button-font-weight": "700",
+      "sections": {
+        "home-slideshow": {
+          "type": "home-slideshow",
+          "blocks": {
+            "slide-1": {
+              "type": "slide",
+              "settings": {
+                "alignment": "center"
+              }
+            }
+          },
+          "block_order": [
+            "slide-1"
+          ],
+          "settings": {
+            "enable": true,
+            "layout": "full-width",
+            "transition": "transition-fade",
+            "autoplay": false
+          }
+        },
+        "home-alternating-content": {
+          "type": "home-alternating-content",
+          "blocks": {
+            "alternating-content-1": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            },
+            "alternating-content-2": {
+              "type": "video",
+              "settings": {
+                "style": "light"
+              }
+            },
+            "alternating-content-3": {
+              "type": "image",
+              "settings": {
+                "style": "default"
+              }
+            }
+          },
+          "block_order": [
+            "alternating-content-1",
+            "alternating-content-2",
+            "alternating-content-3"
+          ],
+          "settings": {}
+        },
+        "home-product-focus": {
+          "type": "home-product-focus",
+          "blocks": {
+            "home-product-focus-1": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-2": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-3": {
+              "type": "feature",
+              "settings": {}
+            },
+            "home-product-focus-4": {
+              "type": "feature",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "home-product-focus-1",
+            "home-product-focus-2",
+            "home-product-focus-3",
+            "home-product-focus-4"
+          ],
+          "settings": {
+            "show_product_image": true,
+            "style": "light",
+            "title": "Product focus",
+            "subtitle": "Highlight your product's finest features."
+          }
+        },
+        "home-images-with-text": {
+          "type": "home-images-with-text",
+          "blocks": {
+            "images-with-text-1": {
+              "type": "image",
+              "settings": {}
+            },
+            "images-with-text-2": {
+              "type": "image",
+              "settings": {}
+            },
+            "images-with-text-3": {
+              "type": "image",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "images-with-text-1",
+            "images-with-text-2",
+            "images-with-text-3"
+          ],
+          "settings": {
+            "style": "default",
+            "alignment": "right"
+          }
+        },
+        "home-text-columns-with-icons": {
+          "type": "home-text-columns-with-icons",
+          "blocks": {
+            "text-column-1": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-2": {
+              "type": "text_column",
+              "settings": {}
+            },
+            "text-column-3": {
+              "type": "text_column",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "text-column-1",
+            "text-column-2",
+            "text-column-3"
+          ],
+          "settings": {
+            "style": "light",
+            "title": "Text columns with icons"
+          }
+        },
+        "home-full-width-media": {
+          "type": "home-full-width-media",
+          "settings": {
+            "style": "default",
+            "title": "Full width media",
+            "text": "<p>Display a full width feature that can contain a large image, or video, and an optional call to action button.<\/p>",
+            "media_layout": "video-highlight",
+            "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+          }
+        },
+        "home-testimonials": {
+          "type": "home-testimonials",
+          "blocks": {
+            "testimonial-1": {
+              "type": "testimonial",
+              "settings": {}
+            },
+            "testimonial-2": {
+              "type": "testimonial",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "testimonial-1",
+            "testimonial-2"
+          ],
+          "settings": {
+            "style": "default",
+            "title": "Testimonials"
+          }
+        },
+        "home-blog-posts": {
+          "type": "home-blog-posts",
+          "settings": {
+            "style": "light",
+            "posts_to_show": "2",
+            "title": "Blog posts"
+          }
+        },
+        "general-header": {
+          "type": "general-header",
+          "settings": {
+            "header_sticky": true
+          }
+        },
+        "general-newsletter": {
+          "type": "general-newsletter",
+          "settings": {
+            "enable": true,
+            "style": "default"
+          }
+        },
+        "general-social-feeds": {
+          "type": "general-social-feeds",
+          "blocks": {
+            "widget-block-1": {
+              "type": "instagram",
+              "settings": {}
+            },
+            "widget-block-2": {
+              "type": "twitter",
+              "settings": {
+                "style": "light"
+              }
+            }
+          },
+          "block_order": [
+            "widget-block-1",
+            "widget-block-2"
+          ],
+          "settings": {}
+        },
+        "general-footer": {
+          "type": "general-footer",
+          "blocks": {
+            "footer-block-1": {
+              "type": "menu",
+              "settings": {
+                "menu": "main-menu"
+              }
+            },
+            "footer-block-2": {
+              "type": "menu",
+              "settings": {
+                "menu": "footer"
+              }
+            }
+          },
+          "block_order": [
+            "footer-block-1",
+            "footer-block-2"
+          ],
+          "settings": {
+            "style": "default",
+            "enable_borders": true,
+            "show_logo": true
+          }
+        }
+      },
+      "content_for_index": [
+        "home-alternating-content",
+        "home-product-focus",
+        "home-images-with-text",
+        "home-text-columns-with-icons",
+        "home-full-width-media",
+        "home-testimonials",
+        "home-blog-posts"
+      ]
+    }
+  }
+}

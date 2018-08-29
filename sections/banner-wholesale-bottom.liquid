@@ -1,0 +1,105 @@
+<div class="banner-section bg-cover {{ section.settings.content-color }}" style="background-image:url('{{ section.settings.banner-bg | img_url: "" }}');">
+  <!--container as module-->
+	<div class="module">
+		<div class="row">
+			<div class="col-md-5 text-left {{ section.settings.right-content }}">
+				<h2>{{ section.settings.banner-title }}</h2>
+              	<!--Banner sub heading-->
+              	{% if section.settings.banner-subheading != blank %}
+              	<h5>{{ section.settings.banner-subheading }}</h5>
+              	{% endif %}
+              	<!--Banner content-->
+				{{ section.settings.banner-content }} 
+              	<!--button buttom-->
+              	{%if section.settings.enable-button != blank %}
+				<a class="btn btn-outline-dark" href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
+              {% endif %}
+			</div>
+		</div>
+	</div>
+  <!--End container as module-->
+</div>
+
+{% schema %}
+  {
+    "name": "Banner wholesale Section",
+    "settings": [
+	{
+        "id": "banner-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      },
+      {
+         "type": "radio",
+         "id": "right-content",
+         "options": [
+            { "value": "ml-auto", "label": "Right Content"},
+            
+            { "value": "left", "label": "Left Content"}
+         ],
+         "label": "Content Position",
+		 "default":   "left"
+      },
+	{
+         "type": "radio",
+         "id": "content-color",
+         "options": [
+            { "value": "white-text", "label": "White Text"},
+            
+            { "value": "black-text", "label": "Black Text"}
+         ],
+         "label": "Content Position",
+		 "default":   "black-text"
+      },
+      
+	  	{
+        "id": "banner-title",
+        "type": "text",
+        "label": "Banner Heading",
+        "default": "Banner Title"
+      },
+		{
+        "id": "banner-subheading",
+        "type": "text",
+        "label": "Banner SubHeading"
+        
+      },
+ 		{
+        "id": "banner-content",
+        "type": "richtext",
+        "label": "Banner Content",
+		"default": "<p>Banner Content text</p>"
+      },
+		{
+        "type": "checkbox",
+        "id": "enable-button",
+        "label": "Enable Button"
+      },
+		
+		{
+        "id": "button-text",
+        "type": "text",
+        "label": "Button text",
+        "default": "Read More"
+      },
+		{
+        "id": "button-link",
+        "type": "url",
+        "label": "Button link"
+      }
+
+	],
+	"presets": [
+      {
+       "name": "Banner wholesale Section"
+        
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

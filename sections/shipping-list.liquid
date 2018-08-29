@@ -1,0 +1,59 @@
+
+<div class="shipping-listing-section">
+	<div class="module">
+  		<div class="inner-title">
+          <h3>{{ section.settings.title}}</h3>
+          {{ section.settings.sub-subtext }}
+        </div>
+        <div class="shipping-list text-left col-md-8 m-auto">
+          <ul class="list-unstyled">
+            {%for block in section.blocks %}
+            <li><a href="{{ block.settings.list-url }}">{{ block.settings.list-text}}</a></li>
+            {% endfor %}
+          </ul>
+      </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Shipping List",
+    "settings": [
+	{
+        "id": "title",
+        "type": "text",
+        "label": "Title"
+      },
+	{
+        "id": "sub-subtext",
+        "type": "richtext",
+        "label": "Top Content"
+      }
+	
+	],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "Add List",
+        "settings": [
+          {
+            "id": "list-text",
+            "type": "text",
+            "label": "List Text"
+          },
+		{
+            "id": "list-url",
+            "type": "url",
+            "label": "List Url"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

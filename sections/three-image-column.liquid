@@ -1,0 +1,51 @@
+<div class="about-prod-block section-wrapper">
+	<div class="module pdt-0">
+      <div class="row">
+      {% for block in section.blocks %}
+        <div class="col-md-4 inner-prod-about">
+          <a href="#">
+              <img src="{{ block.settings.multi-images | img_url: "" }}" alt="">
+          </a>
+        </div>
+      {% endfor %}
+        
+      </div>
+  	</div>
+</div>
+{% schema %}
+  {
+    "name": "Three Column Images",
+    "settings": [
+
+	], 
+	"blocks": [
+      {
+        "type": "select",
+        "name": "Add Image",
+        "settings": [
+          {
+            "id": "multi-images",
+            "type": "image_picker",
+            "label": "Multi Images"
+          }
+        ]
+      }
+    ],
+	"presets": [
+        {
+         "name": "Three Column Images",
+			"blocks": [
+            { 
+              "type": "select"
+            }
+		  ]
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

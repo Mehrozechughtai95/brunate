@@ -1,0 +1,89 @@
+ <div class="contact-sidebar">
+   <div class="inner-sidebar">
+     <h3>{{ section.settings.links-title }}</h3>
+     <ul class="list-unstyled discussion">
+       {% for block in section.blocks %}
+       <li><a href="{{ block.settings.topics-url }}">{{block.settings.topics-text}}</a></li>
+       {% endfor %}
+     </ul>
+   </div>
+   <div class="inner-sidebar">
+     <h3>{{ section.settings.address-title }}</h3>
+     <ul class="list-unstyled address">
+       <li>{{ section.settings.address }}</li>
+       <li><a href="mailto:{{ section.settings.email }}">Email: {{ section.settings.email }}</a></li>
+       <li>{{ section.settings.timings }}.</li>
+     </ul>
+   </div>
+</div> 
+{% schema %}
+   {
+    "name": "Contact Us Sidebar",
+    "settings": [
+	{
+      "id": "links-title",
+      "type": "text",
+      "label": "Links Title",
+      "default": "Title"
+    },
+	{
+      "id": "address-title",
+      "type": "text",
+      "label": "Address Title",
+      "default": "Title"
+    },
+	{
+      "id": "address",
+      "type": "richtext",
+      "label": "Address",
+      "default": "<p>Our Address</p>"
+    },
+	{
+      "id": "email",
+      "type": "text",
+      "label": "Email",
+      "default": "Email"
+    },
+	{
+      "id": "timings",
+      "type": "text",
+      "label": "Timings",
+      "default": "Timings"
+    }
+	],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "Add Link",
+        "settings": [
+          {
+            "id": "topics-text",
+            "type": "text",
+            "label": "Add text"
+          },
+		{
+            "id": "topics-url",
+            "type": "url",
+            "label": "Add URl"
+          }
+        ]
+      }
+    ],
+  "presets": [
+        {
+         "name": "Contact Us Sidebar",
+			"blocks": [
+            { 
+              "type": "select"
+            }
+		  ]
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

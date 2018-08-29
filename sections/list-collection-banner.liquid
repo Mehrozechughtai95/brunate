@@ -1,0 +1,39 @@
+<div class="banner-relative mobclist top-banner-section top-banner-small collection-banner bg-cover" style="background-image:url('{{ section.settings.banner-top-clist-bg | img_url: "" }}')">
+  <picture>
+      <source media='(max-width: 520px)' srcset='{{ section.settings.mbanner-top-clist-bg | img_url: "" }}'>
+      <img src='{{ section.settings.banner-top-clist-bg | img_url: "" }}' alt='.'>
+  </picture>
+  <div class="module">
+    <div class="col-md-5 ml-auto text-right">
+    <h1>{{ section.settings.clist-title }}</h1>
+  </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Collection List Banner",
+    "settings": [
+     {
+        "id": "banner-top-clist-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      },
+      {
+        "id": "mbanner-top-clist-bg",
+        "type": "image_picker",
+        "label": "Mobile Banner Background Image"
+      },
+      {
+        "id": "clist-title",
+        "type": "text",
+        "label": "Banner Title"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

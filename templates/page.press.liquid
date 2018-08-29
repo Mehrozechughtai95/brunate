@@ -1,0 +1,62 @@
+<!-- <div class="module-wrapper top-banner-section top-banner-small bg-cover" style="background-image:url('https://cdn.shopify.com/s/files/1/0068/6106/2259/files/in-the-press.jpg?2162104746070941240');">
+  <div class="module module-default-page">
+   <div class="module-header page-header">
+      <div class="module-title left-banner-title">
+        <div class="col-sm-7">
+        <h1><span>In the press</span></h1>
+        </div>
+      </div>
+    </div>
+    {% unless page.content == blank %}
+      <div class="module-body page-body rte">
+        {{ page.content }}
+      </div>
+    {% endunless %}
+  </div>
+</div> -->
+{% section 'press-banner-section'%}
+
+<div class="press-release-section">
+<div class="module">
+    <div class="module-body clearfix">
+      <div class="module-title">
+        <h3>Latest Press Releases</h3>
+      </div>
+      <ul class="nav nav-pills justify-content-center" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" href="#latest-release" role="tab" data-toggle="tab">Latest Release</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#top-rated" role="tab" data-toggle="tab">Top Rated</a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <!--tabs accordion default-->
+          <div role="tabpanel" class="tab-pane fade in active" id="latest-release">
+            <div class="row">
+              {% assign blog = blogs.articles %}
+              {% paginate blog.articles by 3 %}
+                  {% for article in blog.articles %}
+                    <div class="col-md-4 inner-prod-list text-center">
+                      <div class="press-inner-prod">
+                      	<img src="{{ article.image.src | img_url: 'medium' }}">
+                        <!-- <div class="inner-cl-logo">
+                        	<img src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/this.png?2162104746070941240" alt="">
+                        </div> -->
+                        <h4>{{ article.title }}</h4>
+                        <p>{{ article.content | truncatewords: 50 }}</p>
+                        <a class="btn btn-outline-dark" href="{{ article.url }}">VIEW POST</a>
+                      </div>
+                    </div>
+                    {% endfor %}
+              {% endpaginate %}
+            </div>
+          </div>
+          <div role="tabpanel" class="tab-pane fade" id="top-rated"><p>Ultricies porttitor pulvinar mid ultrices est pulvinar vel hac scelerisque arcu? Elit? Porta penatibus! Penatibus est eu lorem? Porta! Etiam? Nisi est mattis integer scelerisque sit porttitor nec rhoncus mattis odio et sit, ut in a est porttitor quis elit ut</p></div>
+        </div>
+    </div>
+  </div>
+</div>
+{% section 'press-single-banner'%}
+{% section 'press-form'%}

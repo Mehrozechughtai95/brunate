@@ -1,0 +1,84 @@
+<div class="single-banner white-text mb-5 overlay-black black-bg bg-cover  banner-relative contact-social" style="background-image:url('{{ section.settings.bg-image | img_url: ""}}')">
+  <picture>
+    <source media='(max-width: 520px)' srcset='{{ section.settings.bg-image-mobile | img_url: "" }}'>
+    <img src='{{ section.settings.bg-image | img_url: "" }}' alt='.'>
+  </picture>
+  <div class="position-center">
+    <div class="module">
+      <div class="col-md-8 m-auto">
+        <div class="inner-social-banner">
+          <h3>{{ section.settings.title }}</h3>
+          <h2>{{ section.settings.subtitle }}</h2>
+          <ul class="list-unstyled">
+     	 	{% for block in section.blocks %}
+              <li><a href="{{block.settings.social-link}}" target="_blank"><i class="fab {{ block.settings.social-icon }}" ></i></a></li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Social Section",
+    "settings": [
+	{
+      "id": "title",
+      "type": "text",
+      "label": "Title",
+      "default": "Title"
+    },
+	{
+      "id": "subtitle",
+      "type": "text",
+      "label": "Sub Title",
+      "default": "Sub Title"
+    },
+	{
+      "id": "bg-image",
+      "type": "image_picker",
+      "label": "Select Image"
+    },
+	{
+      "id": "bg-image-mobile",
+      "type": "image_picker",
+      "label": "Select Mobile Image"
+    }
+],
+	"blocks": [
+      {
+        "type": "text",
+        "name": "Add Social Link",
+        "settings": [
+          {
+            "id": "social-icon",
+            "type": "text",
+            "label": "Social Icon"
+          },
+          {
+            "id": "social-link",
+            "type": "text",
+            "label": "Social Links"
+          }          
+        ]
+      }
+    ],
+	"presets": [
+        {
+         "name": "Social Section",
+			"blocks": [
+            { 
+              "type": "text"
+            }
+		  ]
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

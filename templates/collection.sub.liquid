@@ -1,0 +1,153 @@
+<div class="container">
+{% assign menu = linklists.subcategory %}
+	<ul class="tabs"> 
+      <li class="tab-link current" data-tab="tab-0">TRIO</li>
+      {% for link in menu.links %}
+      <li class="tab-link" data-tab="tab-{{ forloop.index }}">{{ link.title }}</li>
+      {% endfor %}
+	</ul>
+  <div id="tab-0" class="tab-content current">
+	<div class="module-body collection-body">
+<div class="list collection-list compact crop image-contain column-4">
+{% assign collection = collections.hopsulator-trio %}
+{% paginate collection.products by 200 %}
+  {% for product in collection.products %}
+  <div class="list-item" onclick="window.location = {{ product.url }}">
+   <div class="list-image-wrapper">
+       <img class="list-image" src="{{ product.featured_image | product_img_url: 'medium' }}">
+      <div class="list-overlay"></div>
+      <div class="list-icon icon icon-cart"></div>
+     </div>
+    <div class="list-text-wrapper">
+      <div class="list-title">
+         {{ product.title }}
+       </div>
+
+      <div class="list-meta">
+          <span class="price">
+              <span class="money">{{ product.price_min | money }}</span>
+              {% unless product.compare_at_price_min <= product.price_min %}
+                <span class="original money">
+                  {% if product.compare_at_price_min > product.price_min %}
+                    {{ product.compare_at_price_min | money }}
+                  {% endif %}
+                </span>
+                <span class="saving">
+                  {% if selectedVariant.compare_at_price > selectedVariant.price %}
+                    {{ "products.product.saving" | t }} <span class="saving-result money">{{ selectedVariant.compare_at_price | minus: selectedVariant.price | money }}</span>
+                  {% endif %}
+                </span>
+              {% endunless %}
+            </span>
+        <div class="prod-btn-bottom">
+          <a class="btn btn-outline-dark" href="{{ product.url }}">Click to Browse</a>
+        </div>
+       </div>
+    </div>
+</div>
+
+  {% endfor %}
+  {{ paginate | default_pagination }}
+{% endpaginate %}
+      </div></div>	
+  </div>
+   {% for link in menu.links %}
+    <div id="tab-{{ forloop.index }}" class="tab-content">
+      {% assign otro = link.title | handleize %}
+      <div class="module-body collection-body">
+<div class="list collection-list compact crop image-contain column-4">
+{% assign collection = collections.[otro] %}
+  {{collection}}
+{% paginate collection.products by 200 %}
+  {% for product in collection.products %}
+  <div class="list-item" onclick="window.location = {{ product.url }}">
+   <div class="list-image-wrapper">
+       <img class="list-image" src="{{ product.featured_image | product_img_url: 'medium' }}">
+      <div class="list-overlay"></div>
+      <div class="list-icon icon icon-cart"></div>
+     </div>
+    <div class="list-text-wrapper">
+      <div class="list-title">
+         {{ product.title }}
+       </div>
+
+      <div class="list-meta">
+          <span class="price">
+              <span class="money">{{ product.price_min | money }}</span>
+              {% unless product.compare_at_price_min <= product.price_min %}
+                <span class="original money">
+                  {% if product.compare_at_price_min > product.price_min %}
+                    {{ product.compare_at_price_min | money }}
+                  {% endif %}
+                </span>
+                <span class="saving">
+                  {% if selectedVariant.compare_at_price > selectedVariant.price %}
+                    {{ "products.product.saving" | t }} <span class="saving-result money">{{ selectedVariant.compare_at_price | minus: selectedVariant.price | money }}</span>
+                  {% endif %}
+                </span>
+              {% endunless %}
+            </span>
+        <div class="prod-btn-bottom">
+          <a class="btn btn-outline-dark" href="{{ product.url }}">Click to Browse</a>
+        </div>
+       </div>
+    </div>
+</div>
+
+  {% endfor %}
+  {{ paginate | default_pagination }}
+{% endpaginate %}
+      </div></div>
+  </div>
+  {% endfor %}
+
+</div><!-- container -->
+
+<!-- {% section 'template-collection' %} -->
+
+<div style="margin:0 auto;" class="pxFormGenerator" id="8T_8gUkCtEr8Fl9f1Gbiww"></div>
+<style>
+ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+/* 			background: #ededed; */
+/* 			padding: 15px; */
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+
+})
+</script>

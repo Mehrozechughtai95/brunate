@@ -1,0 +1,99 @@
+{% for block in section.blocks %}
+  <div class="banner-relative top-banner-section top-banner-small collection-banner bg-cover" style="background-image:url('{{ block.settings.bimg | img_url: '' }}')">
+     <picture>
+      <source media='(max-width: 520px)' srcset='https://cdn.shopify.com/s/files/1/0068/6106/2259/files/product_listing.jpg?14726481505036028082'>
+      <img src='{{ block.settings.bimg | img_url: '' }}' alt='.'>
+  </picture>
+  <div class="module">
+    <div class="col-md-5 ml-auto text-right">
+    <h1>{{ collection.title }}  </h1>
+  </div>
+  </div>
+</div>
+{% endfor %}
+<!-- <div class="top-banner-section top-banner-small collection-banner bg-cover" style="background-image:url('https://cdn.shopify.com/s/files/1/0068/6106/2259/files/baner.png?13767670647085093026')">
+  <div class="module">
+    <div class="col-md-5 ml-auto text-right">
+    <h1>{{ collection.title }}  </h1>
+  </div>
+  </div>
+</div> -->
+
+{% comment %}
+  Launch has opinionated tag filtering and background styles
+  Adjust these settings as needed to customise the template
+{% endcomment %}
+{% assign enable_tag_filtering = false %}
+{% assign collection_background_style = 'default' %}
+
+<div class="middle-section">
+  <div class="module">
+    <div class="col-md-8 m-auto">
+      <h2>Brumate {{ collection.title }}</h2>
+<!--       {{collection.description}} -->
+      <p>Integer, ac massa amet dignissim nec ut mid proin, rhoncus, lundium pulvinar, ultrices aliquet vel? Rhoncus egestas hac diam integer sagittis auctor, tincidunt </p>
+    </div>
+  </div>
+</div>
+
+{% paginate collection.products by section.settings.products_per_page %}
+  <div class="module-wrapper collection-prod-listing style-{{ collection_background_style }}">
+    <div class="module collection {% if collection.handle == 'all' %}all{% endif %}">
+<!--       <div class="module-header collection-header">
+        <div class="module-title">
+          {% if collection.handle == 'all' %}
+            <h1>{{ 'collections.collection.all_products' | t }}</h1>
+          {% else %}
+            <h1 class="module-title">{{ collection.title }}</h1>
+          {% endif %}
+        </div>
+        {% if collection.description != blank %}
+          <div class="module-subtitle collection-subtitle rte">
+            {{ collection.description }}
+          </div>
+        {% endif %}
+      </div> -->
+      <div class="module-body collection-body">
+        {% if collection.all_tags.size > 0 and enable_tag_filtering %}
+          {% include 'collection-tag-selector' %}
+        {% endif %}
+        {% assign product_count = collection.products.size | plus: 0 %}
+        {% assign value = product_count | modulo: 2 %}
+        {% assign product_count_odd = 'true' %}
+        {% if value == 0 %}
+          {% assign product_count_odd = 'false' %}
+        {% endif %}
+        {% include 'collection-item-default' %}
+        {% if  product_count == 0 %}
+          <p>{{ "products.product.no_product" | t }}</p>
+        
+        {% endif %}
+        
+      </div>
+    </div>
+  </div>
+<!--   {% if paginate.previous or paginate.next %}
+    {% include 'pagination' %}
+  {% endif %}
+{% endpaginate %} -->
+
+<div class="brumate-prod-section">
+  <div class="module-title ">
+      <h2>Happy Customers with their Brumate Product</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3 col-sm-6 brumate-inner-prod">
+        <img src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/d1.png?1761293627849398514" alt="">
+      </div>
+       <div class="col-md-3 col-sm-6 brumate-inner-prod">
+        <img src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/d2.png?11608938105701593897" alt="">
+      </div>
+       <div class="col-md-3 col-sm-6 brumate-inner-prod">
+        <img src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/d3.png?11608938105701593897" alt="">
+      </div>
+       <div class="col-md-3 col-sm-6 brumate-inner-prod">
+        <img src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/d4.png?11608938105701593897" alt="">
+      </div>
+    </div>
+  
+</div>

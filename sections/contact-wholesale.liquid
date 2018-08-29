@@ -1,0 +1,44 @@
+<div class="wholesale-contact text-center">
+  <div class="module">
+    <div class="col-md-8 m-auto">
+      <div class="inner-title">
+          <h2>{{ section.settings.wholesale-title }}</h2>      
+        <h5>Just fill in the form below</h5>
+        {{ section.settings.wholesale-content }}
+      </div>
+      <div style="margin:0 auto;" class="pxFormGenerator" id="OIg0yTJDqWJiEkLSaHt0CA"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact Wholesale",
+    "settings": [
+	{
+        "id": "wholesale-title",
+        "type": "text",
+        "label": "Title",
+		"default": "Title"
+      },
+	{
+        "id": "wholesale-subtitle",
+        "type": "text",
+        "label": "Sub Title",
+		"default": "Title"
+      },
+	{
+        "id": "wholesale-content",
+        "type": "richtext",
+        "label": "Page Content",
+		"default": "<p>Page Content</p>"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,14 @@
+<div class=" single-banner bg-cover" style="background-image:url('{{ section.settings.banner-single-press-bg | img_url: "" }}')">
+</div>
+{% schema %}
+  {
+    "name": "Press Single Banner",
+    "settings": [
+     {
+        "id": "banner-single-press-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      }
+    ]
+  }
+{% endschema %}

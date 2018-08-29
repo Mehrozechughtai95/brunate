@@ -1,0 +1,53 @@
+<div class="find-help-section">
+  <div class="module">
+    <div class="row">
+      <div class="col-md-5">
+          <img src="{{ section.settings.left-image | img_url: "" }}" alt="">
+      </div>
+    	<div class="col-md-7 right-content-help">
+        <div class="inner-find-help text-left">
+          <h5>{{ section.settings.title}}</h5>
+          <h2>{{ section.settings.main-title}}</h2>
+         	{{ section.settings.content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Find Help Section",
+    "settings": [
+  	{
+      "id": "left-image",
+      "type": "image_picker",
+      "label": "Chat Image"
+    },
+	{
+      "id": "title",
+      "type": "text",
+      "label": "Title"
+    },
+	{
+      "id": "main-title",
+      "type": "text",
+      "label": "Main Title"
+    },
+	{
+      "id": "content",
+      "type": "text",
+      "label": "Content",
+	  "default": "<p>Egestas lundium.</p>"
+
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

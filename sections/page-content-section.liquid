@@ -1,0 +1,27 @@
+<div class="about-content content-section">
+  <div class="module">
+    <div class="col-md-8 m-auto">
+    <p>{{ section.settings.page-content }}</p>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Page Content Section",
+    "settings": [
+      {
+        "id": "page-content",
+        "type": "richtext",
+        "label": "Page Content",
+		"default": "<p>Page Content</p>"
+      }
+  	]
+	
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

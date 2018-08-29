@@ -1,0 +1,96 @@
+<div class="banner-relative section-wrapper module-wrapper top-banner-small top-banner-section bg-cover top-blog-banner" style="background-image:url('https://cdn.shopify.com/s/files/1/0068/6106/2259/files/Blog-header.jpg?7896996948064379803');">
+  <picture>
+    <source media='(max-width: 520px)' srcset='https://cdn.shopify.com/s/files/1/0068/6106/2259/files/blog-top.jpg?18373560041860854670'>
+    <img src='https://cdn.shopify.com/s/files/1/0068/6106/2259/files/Blog-header.jpg?7896996948064379803' alt='.'>
+  </picture>
+  <div class="module page {% if page.content == blank %}no-content{% endif %}">
+    <div class="module-header page-header">
+      <div class="module-title left-banner-title">
+        <div class="col-sm-5">
+          <h1><span>BRUMATE</span>Articles</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="articles-featured">
+	<div class="module">
+       <div class="row">
+      <div class="col-md-4 inner-prod-list text-center">
+        <div class="press-inner-prod">
+            <div class="article-top-title">
+            <h3>PRODUCT BLOGS</h3>
+          </div>
+           {% for article in blog.articles limit: 1%}
+		{% if article.tags != 'Featured' %}
+          <a href="{{ article.url }}"><img class="fullimg" src="{{ article.image | img_url: '' }}" alt="{{ article.title | strip_html | escape }}" /></a>
+          <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+          <div class="inner-article-content"> {{ article.excerpt_or_content }}</div>
+		   
+          <a class="btn btn-outline-dark" href="{{ article.url }}"> VIEW POST</a>
+            		
+		{% endif %}
+        {% endfor %}
+        </div>
+      </div>
+      <div class="col-md-8 inner-prod-list">
+        <div class="press-inner-prod">
+          <div class="article-top-title">
+            <h3>FEATURED</h3>
+          </div>
+          {% for article in blog.articles%}
+		{% if article.tags contains 'Featured' %}
+          <a href="{{ article.url }}"><img class="fullimg" src="{{ article.image | img_url: '' }}" alt="{{ article.title | strip_html | escape }}" /></a>
+          <h4><a href="{{ article.url }}">{{ article.title }}</a></h4>
+          
+          <div class="inner-article-content"> {{ article.excerpt_or_content }}</div>
+		   
+          <a class="btn btn-outline-dark" href="{{ article.url }}"> VIEW POST</a>
+            		
+		{% endif %}
+        {% endfor %}
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% paginate blog.articles by 3 %}
+<div class="article-section">
+  <div class="module pdt-0">
+    <div class="row">
+      {% for article in blog.articles %}
+            {% include 'article-list-item' %}
+          {% else %}
+            <div class="empty">
+              <p>{{ 'blogs.blog.empty' | t }}</p>
+            </div>
+          {% endfor %}
+    </div>
+  </div>
+</div>
+
+<!--   {% if paginate.previous or paginate.next %}
+    {% include 'pagination' %}
+  {% endif %} -->
+
+{% endpaginate %}
+<div class="article-bottom-section banner-section bg-cover black-text mb-3">
+		<div class="row row no-gutters align-items-center">
+          
+			<div class="col-md-12 col-lg-5 text-left left">
+              <div class="article-inner-banner">
+				<h2>Scelerisque ac ultricies lectus adipiscing nec in</h2>
+              	<!--Banner sub heading-->	
+				<p>Ac a penatibus ac lundium natoque tristique. Natoque. Sed. Eros integer in turpis! Vel eu ultricies, mauris, integer auctor turpis, turpis, tempor tristique phasellus ridiculus magna, non, adipiscing lacus turpis, turpis et massa? Dignissim ac dictumst? Proin eu! Tempor rhoncus, adipiscing augue? Tincidunt magna magna, lorem! Habitasse ut? Adipiscing urna ac, sagittis</p> 
+              	<!--Banner content-->
+				<a class="btn btn-outline-dark" href="/collections/uncorkd-xl">VIEW POST</a>
+              	<!--button buttom-->
+              </div>
+			</div>
+          <div class="col-md-12 col-lg-7">
+				<img class="fullimg" src="https://cdn.shopify.com/s/files/1/0068/6106/2259/files/Blog-full-right.jpg?17658073695924365247">
+			</div>
+		</div>
+</div>
+

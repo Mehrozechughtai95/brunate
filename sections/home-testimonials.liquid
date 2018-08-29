@@ -1,0 +1,199 @@
+<div
+  class="module-wrapper style-{{ section.settings.style }} border"
+  data-section-id="{{ section.id }}"
+  data-section-type="testimonials">
+
+  <div class="module home-testimonials">
+    {% if section.settings.title != blank or section.settings.subtitle != blank %}
+      <div class="module-header">
+        {% if section.settings.title != blank %}
+          <h3 class="module-title home-testimonials-title">{{ section.settings.title }}</h3>
+        {% endif %}
+        {% if section.settings.subtitle != blank %}
+          <p class="module-subtitle">{{ section.settings.subtitle }}</p>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="module-body">
+      <div class="home-testimonials-container clearfix">
+        <div class="home-testimonials-slides">
+          <div class="home-testimonials-slides-list">
+            {% for block in section.blocks %}
+              {% capture current %}{% cycle 1, 2 %}{% endcapture %}
+              {% assign image = block.settings.image %}
+              {% assign onboarding = false %}
+
+              {% if image == blank and block.settings.quote == blank and block.settings.source == blank and block.settings.city == blank %}
+                {% assign onboarding = true %}
+              {% endif %}
+
+              {%- capture testimonial_class -%}
+                home-testimonials-slides-list-item
+                {% if image or onboarding %}has-avatar{% endif %}
+                {% if forloop.first %}active{% endif %}
+              {%- endcapture -%}
+
+              <div
+                class="{{- testimonial_class | strip_newlines -}}"
+                data-position="{{ forloop.index }}"
+                data-index="{{ forloop.index }}"
+                {{ block.shopify_attributes }}>
+
+                <div class="home-testimonials-slides-list-item-container">
+                  <div class="home-testimonials-slides-list-item-body">
+                    <div class="home-testimonial-quote">
+                      {% unless onboarding %}
+                        {{ block.settings.quote }}
+                      {% else %}
+                        {{ 'onboarding.testimonials.quote' | t }}
+                      {% endunless %}
+                    </div>
+                  </div>
+
+                  <div class="home-testimonials-slides-list-item-footer">
+                    <div class="home-testimonials-slides-list-item-footer-container clearfix">
+                      {% if image or onboarding %}
+                        <div class="home-testimonials-slides-list-item-footer-image">
+                          {% if image %}
+                            <img class="home-testimonial-avatar"
+                              alt="{{ image.alt | escape }}"
+                              src="{{ image | img_url: '120x120', crop: 'center' }}">
+                          {% elsif onboarding %}
+                            {{ 'image' | placeholder_svg_tag: 'home-testimonial-avatar placeholder-svg' }}
+                          {% endif %}
+                        </div>
+                      {% endif %}
+
+                      {% if block.settings.source != blank or block.settings.city != blank or onboarding %}
+                        <div class="home-testimonials-slides-list-item-footer-text">
+                          {% unless onboarding %}
+                            {% if block.settings.source != blank %}
+                              <div class="home-testimonial-source">
+                                {{ block.settings.source }}
+                              </div>
+                            {% endif %}
+                            {% if block.settings.city != blank %}
+                              <p class="home-testimonial-city">
+                                {{ block.settings.city }}
+                              </p>
+                            {% endif %}
+                          {% else %}
+                            <p class="home-testimonial-source">
+                              {{ 'onboarding.testimonials.quote_source_' | append: current | t }}
+                            </p>
+                          {% endunless %}
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              {% endfor %}
+          </div>
+        </div>
+
+        <div class="home-testimonials-pagination">
+          <div class="home-testimonials-pagination-list clearfix">
+            {% for block in section.blocks %}
+              <div class="home-testimonials-pagination-list-item {% if forloop.first %}active{% endif %}"
+                data-position="{{ forloop.index }}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
+        <div class="home-testimonials-navigation">
+          <div class="home-testimonials-navigation-item previous-slide">
+            <a class="home-testimonials-navigation-icon icon icon-arrow-left" href="#" tabindex="0"></a>
+          </div>
+          <div class="home-testimonials-navigation-item next-slide">
+            <a class="home-testimonials-navigation-icon icon icon-arrow-right" href="#" tabindex="0"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Testimonials",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Background style",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Testimonial",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "quote",
+          "label": "Quote"
+        },
+        {
+          "type": "text",
+          "id": "source",
+          "label": "Source"
+        },
+        {
+          "type": "text",
+          "id": "city",
+          "label": "City"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Avatar image",
+          "info": "120 x 120px .jpg required."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Testimonials",
+      "settings": {
+        "style": "default"
+      },
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

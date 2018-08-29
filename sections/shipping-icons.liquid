@@ -1,0 +1,69 @@
+<div class="shipping-section">
+  <div class="module">
+    <div class="col-md-8 m-auto">
+      <div class="inner-title">
+        <h3>{{ section.settings.main-title }}</h3>
+        {{ section.settings.main-subtext }}
+      </div>
+      <div class="row shipping-icons">
+        {% for block in section.blocks %}
+        <div class="col-md-6">
+          <div class="inner-icons">
+            <img src="{{ block.settings.img-icon | img_url: "" }}" alt="">
+            <h4>{{ block.settings.icon-title }}</h4>
+            	{{ block.settings.icon-paragraph }}
+          </div>
+        </div>
+         {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Shipping Icons Section",
+    "settings": [
+	{
+        "id": "main-title",
+        "type": "text",
+        "label": "Title"
+      },
+	{
+        "id": "main-subtext",
+        "type": "richtext",
+        "label": "Top Content"
+      }
+	
+	],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "Add Icon",
+        "settings": [
+          {
+            "id": "img-icon",
+            "type": "image_picker",
+            "label": "Image Icon"
+          },
+          {
+            "id": "icon-title",
+            "type": "text",
+            "label": "Icon Title"
+          },
+          {
+            "id": "icon-paragraph",
+            "type": "richtext",
+            "label": "Paragraph Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

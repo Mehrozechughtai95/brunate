@@ -1,0 +1,230 @@
+<div
+  class="module-wrapper home-text-main-section style-{{ section.settings.style }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="text-columns">
+  <div class="module home-inline">
+
+    {% if section.settings.title != blank %}
+      <div class="module-header home-inline-header">
+          <div class="module-title">
+            <h3>{{ section.settings.title }}</h3>
+          </div>
+        {% if section.settings.subtitle != blank %}
+          <div class="module-subtitle">
+            {{ section.settings.subtitle }}
+          </div>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="module-body home-inline-body icon-body-section">
+      <div
+        class="list column-{{ section.settings.columns_per_row }} clearfix"
+        {{ block.shopify_attributes }}>
+
+        {% for block in section.blocks %}
+          {% assign onboarding = false %}
+            {% if
+              block.settings.title == blank and
+              block.settings.text == blank and
+              block.settings.button_link == blank and
+              block.settings.button_text == blank
+            %}
+              {% assign onboarding = true %}
+            {% endif %}
+
+          {% unless onboarding %}
+            <div class="list-item {% if block.settings.icon != blank %}has-icon{% endif %}">
+
+              {% if block.settings.icon != blank %}
+                <div class="list-image-wrapper">
+                  {% if block.settings.icon-img != blank %}
+                  <img src="{{ block.settings.icon-img | img_url: "" }}" alt="">
+                  {% else %}
+                  {%
+                    include 'font-icon',
+                    icon: block.settings.icon,
+                    class: 'list-item-icon',
+                    title: block.settings.title
+                  %}
+                  {% endif %}
+                </div>
+              {% endif %}
+
+              <div class="list-text-wrapper">
+                {% if block.settings.title != blank %}
+                  <div class="list-title">
+                    {{ block.settings.title }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.text != blank %}
+                  <div class="list-text{% if block.settings.title == blank %} no-margin{% endif %}">
+                    {{  block.settings.text }}
+                  </div>
+                {% endif %}
+
+                {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+                  <div class="list-cta">
+                    <a class="button list-button" href="{{ block.settings.button_link }}">
+                      {{ block.settings.button_text }}
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
+              
+            </div>
+          {% else %}
+            <div class="list-item has-icon">
+              <div class="list-image-wrapper">
+                {% assign icon = 'ion-image' %}
+                {% if block.settings.icon != blank %}
+                  {% assign icon = block.settings.icon %}
+                {% endif %}
+                {%
+                  include 'font-icon',
+                  icon: icon,
+                  class: 'list-item-icon'
+                %}
+              </div>
+
+              <div class="list-text-wrapper">
+                <div class="list-title">
+                  {{ 'onboarding.text_columns.title' | t }}
+                </div>
+                <div class="list-text">
+                  {{ 'onboarding.text_columns.text' | t }}
+                </div>
+              </div>
+            </div>
+          {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+{{section.settings.form-code}}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text columns with icons",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "select",
+      "id": "style",
+      "label": "Background style",
+      "options": [
+        {
+          "value": "default",
+          "label": "Default"
+        },
+        {
+          "value": "light",
+          "label": "Light"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "columns_per_row",
+      "label": "Columns per row",
+      "options": [
+        {
+          "value": "2",
+          "label": "2"
+        },
+        {
+          "value": "3",
+          "label": "3"
+        },
+        {
+          "value": "4",
+          "label": "4"
+        }
+      ],
+      "default": "3"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subheading"
+    },
+    {
+      "type": "textarea",
+      "id": "form-code",
+      "label": "Form Code"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Heading"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Link"
+        },
+ 		{
+          "type": "image_picker",
+          "id": "icon-img",
+          "label": "Icon image"
+        },
+        {
+          "type": "text",
+          "id": "icon",
+          "label": "Icon name",
+          "info": "[Click here](http:\/\/ionicons.com\/) to view the list of available icons. Example: bluetooth"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "Text",
+      "name": "Text columns with icons",
+      "blocks": [
+        {
+          "type": "text_column",
+          "settings": {
+            "icon": "ion-image"
+          }
+        },
+        {
+          "type": "text_column",
+          "settings": {
+            "icon": "ion-image"
+          }
+        },
+        {
+          "type": "text_column",
+          "settings": {
+            "icon": "ion-image"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

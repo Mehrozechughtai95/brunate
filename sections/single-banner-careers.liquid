@@ -1,0 +1,28 @@
+
+<div class="single-banner black-bg  mb-5 bg-cover" style="background-image:url('{{ section.settings.single-bg | img_url: "" }}')">
+</div>
+
+{% schema %}
+  {
+    "name": "Single Banner Careers",
+    "settings": [
+		{
+        "id": "single-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      }
+	],
+	"presets": [
+        {
+         "name": "Single Banner Careers"
+
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

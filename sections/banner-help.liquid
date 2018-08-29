@@ -1,0 +1,71 @@
+<div class="module-wrapper bg-cover top-black-banner {{ section.settings.overlay-banner }} {{ section.settings.top-banner-large }}" style="background-image:url('{{ section.settings.banner-top-bg | img_url: "" }}');">
+  <div class="module page {% if page.content == blank %}no-content{% endif %}">
+    <div class="module-header page-header">
+      <div class="module-title">
+        <h2>{% if section.settings.black-banner-title != blank %} {{ section.settings.black-banner-title }} {% else %} {{ page.title }} {% endif %}</h2>
+        {% if section.settings.enable-search == 'enable-search' %}
+        <div class="banner-search">
+         <form class="header-search-form" action="/search" method="get">
+            <input class="header-search-input" name="q" type="text" placeholder="Search the Site" value="">
+          </form>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+ 
+
+{% schema %}
+  {
+    "name": "Banner Help Section",
+    "settings": [
+	{
+      "type": "text",
+      "id": "black-banner-title",
+      "label": "Banner Title"
+	
+	},
+      {
+       "type": "select",
+       "id": "overlay-banner",
+       "options": [
+          { "value": "overlay-black", "label": "Black Banner Overlay"},
+          { "value": "No-banner", "label": "Disable Overlay"}
+       ],
+       "label": "overlay"
+    },
+  	{
+       "type": "select",
+       "id": "top-banner-large",
+       "options": [
+          { "value": "Normal-banner", "label": "Normal Banner"},
+          { "value": "top-banner-large", "label": "Large Banner"}
+       ],
+       "label": "overlay"
+    },
+	{
+        "id": "banner-top-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      },
+	{
+         "type": "radio",
+         "id": "enable-search",
+         "options": [
+            { "value": "enable-search", "label": "Enable Search"},
+			{ "value": "disable-search", "label": "Disable Search"}
+         ],
+         "label": "Enable Search",
+		 "default":   "disable-search"
+      }
+
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

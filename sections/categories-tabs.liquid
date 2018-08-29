@@ -1,0 +1,161 @@
+<div class="module home-product-collection">
+  <div class="category_tabs">
+    <div class = "tabinator">
+      <h2 class="text-center">{{ section.settings.ctitle-box}}</h2>
+      <ul class="nav nav-pills justify-content-center" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" href="#cfcid" role="tab" data-toggle="tab">{{ collections[section.settings.fcid].title }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cscid" role="tab" data-toggle="tab">{{ collections[section.settings.scid].title }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ctcid" role="tab" data-toggle="tab">{{ collections[section.settings.tcid].title }}</a>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade in active"  id = "cfcid">
+          <div class="module-body home-products-body">
+            <div class="list compact crop image-contain column-3">
+              {% for product in collections[section.settings.fcid].products limit: 3 %}
+              {%
+                        include 'product-list-item',
+              excludeCover: true
+              %}
+              {% else %}
+              {% for i in (1..product_limit) %}
+              {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+
+              {%- capture placeholder_image -%}
+              {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg list-image' }}
+              {%- endcapture -%}
+              {% assign title = 'onboarding.featured_collection.product_title' | t %}
+
+              {% include
+                          'product-list-item',
+              onboarding: true,
+              onboarding_image: placeholder_image,
+              onboarding_title: title,
+              excludeCover: true
+              %}
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+          {% if collections[section.settings.fcid] != empty %}
+            <div class="module-footer home-products-footer">
+              <a class="view-all-btn" href="{{ collections[section.settings.fcid].url }}">View All {{ collections[section.settings.fcid].title }}</a>
+            </div>
+          {% endif %}
+        </div>
+        <div role="tabpanel" class="tab-pane fade"  id = "cscid">
+          <div class="module-body home-products-body">
+            <div class="list compact crop image-contain column-3">
+              {% for product in collections[section.settings.scid].products limit: 3 %}
+              {%
+                        include 'product-list-item',
+              excludeCover: true
+              %}
+              {% else %}
+              {% for i in (1..product_limit) %}
+              {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+
+              {%- capture placeholder_image -%}
+              {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg list-image' }}
+              {%- endcapture -%}
+              {% assign title = 'onboarding.featured_collection.product_title' | t %}
+
+              {% include
+                          'product-list-item',
+              onboarding: true,
+              onboarding_image: placeholder_image,
+              onboarding_title: title,
+              excludeCover: true
+              %}
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+          {% if collections[section.settings.scid] != empty %}
+            <div class="module-footer home-products-footer">
+              <a class="view-all-btn" href="{{ collections[section.settings.scid].url }}">View All {{ collections[section.settings.scid].title }}</a>
+            </div>
+          {% endif %}
+        </div>
+        <div role="tabpanel" class="tab-pane fade"  id = "ctcid">
+          <div class="module-body home-products-body">
+            <div class="list compact crop image-contain column-3">
+              {% for product in collections[section.settings.tcid].products limit: 3 %}
+              {%
+                      include 'product-list-item',
+              excludeCover: true
+              %}
+              {% else %}
+              {% for i in (1..product_limit) %}
+              {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
+
+              {%- capture placeholder_image -%}
+              {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg list-image' }}
+              {%- endcapture -%}
+              {% assign title = 'onboarding.featured_collection.product_title' | t %}
+
+              {% include
+                        'product-list-item',
+              onboarding: true,
+              onboarding_image: placeholder_image,
+              onboarding_title: title,
+              excludeCover: true
+              %}
+              {% endfor %}
+              {% endfor %}
+            </div>
+          </div>
+          {% if collections[section.settings.tcid] != empty %}
+            <div class="module-footer home-products-footer">
+              <a class="view-all-btn" href="{{ collections[section.settings.tcid].url }}">View All {{ collections[section.settings.tcid].title }}</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Categories Section",
+    "settings": [
+	{
+      "id": "ctitle-box",
+      "type": "text",
+      "label": "Heading",
+      "default": "Title"
+    },
+	{
+       "type":      "collection",
+       "id":        "fcid",
+       "label":     "Select Category"
+    },
+	{
+       "type":      "collection",
+       "id":        "scid",
+       "label":     "Select Category"
+    },
+	{
+       "type":      "collection",
+       "id":        "tcid",
+       "label":     "Select Category"
+    }
+	],
+  "presets": [
+        {
+         "name": "Categories Section"
+			
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+{% endstylesheet %}

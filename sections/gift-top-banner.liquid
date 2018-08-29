@@ -1,0 +1,33 @@
+<div class="module-wrapper top-banner-section top-banner-small bg-cover" style="background-image:url('{{ section.settings.banner-top-press-bg | img_url: "" }}');">
+  <div class="module module-default-page">
+   <div class="module-header page-header">
+      <div class="module-title left-banner-title">
+        <div class="col-sm-7">
+        <h1><span>{{section.settings.pressbanner-title}}</span></h1>
+        </div>
+      </div>
+    </div>
+    {% unless page.content == blank %}
+      <div class="module-body page-body rte">
+        {{ page.content }}
+      </div>
+    {% endunless %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Create Own Gift Banner",
+    "settings": [
+     {
+        "id": "banner-top-press-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      },
+      {
+        "id": "pressbanner-title",
+        "type": "text",
+        "label": "Banner Title"
+      }
+    ]
+  }
+{% endschema %}

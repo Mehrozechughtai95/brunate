@@ -1,0 +1,34 @@
+<div class="content-careers">
+  <div class="module">
+    <div class="col-md-7 m-auto">
+      <h1>{{ section.settings.careers-title }}</h1>
+    	{{ section.settings.careers-content }}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Content Careers",
+    "settings": [
+	{
+        "id": "careers-title",
+        "type": "text",
+        "label": "Title",
+		"default": "Title"
+      },
+	{
+        "id": "careers-content",
+        "type": "richtext",
+        "label": "Page Content",
+		"default": "<p>Page Content</p>"
+      }
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

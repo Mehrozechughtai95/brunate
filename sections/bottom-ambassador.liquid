@@ -1,0 +1,78 @@
+<div class="ambassador-section black-bg white-text">
+    <div class="module-wrapper">
+      <div class="module home-left-right-features">
+        <div class="module-body">
+          <div class="home-left-right-feature clearfix media-aligned-right">
+            <div class="home-left-right-section home-left-right-text ">
+              <h2 class="module-title home-left-right-titles">
+                {{ section.settings.grop-title }} <strong> {{section.settings.subtitle}}</strong>
+              </h2>
+              <div class="module-content home-left-right-content">
+                <h5>{{ section.settings.amb-content }}</h5>
+                <a class="btn btn-outline-dark" href="{{ section.settings.inquire-link }}">{{ section.settings.inquire-text }}</a>
+              </div>
+            </div>
+            <div class="home-left-right-section home-left-right-media">
+              	 <picture>
+                    <source media='(max-width: 520px)' srcset='{{ section.settings.amb-img-mobile | img_url: "" }}'>
+                    <img src='{{ section.settings.amb-img | img_url: "" }}' alt='.'>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Bottom 2 Columns",
+    "settings": [
+	{
+        "id": "grop-title",
+        "type": "text",
+        "label": "Title",
+		"default": "Title"
+      },
+	{
+        "id": "subtitle",
+        "type": "text",
+        "label": "Sub Title",
+		"default": "Sub Title"
+      },
+	{
+        "id": "amb-content",
+        "type": "text",
+        "label": "Content",
+		"default": "Ac a penatibus ac lundium natoque tristique."
+      },
+    {
+        "id": "inquire-text",
+        "type": "text",
+        "label": "Button Text",
+		"default": "Title"
+      },{
+        "id": "inquire-link",
+        "type": "text",
+        "label": "Button Link",
+		"default": "Title"
+      },
+		{
+        "id": "amb-img",
+        "type": "image_picker",
+        "label": "Right Image"
+      },
+		{
+        "id": "amb-img-mobile",
+        "type": "image_picker",
+        "label": "Right Image Mobile"
+      }
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

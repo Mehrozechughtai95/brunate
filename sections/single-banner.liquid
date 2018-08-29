@@ -1,0 +1,28 @@
+
+<div class="faq-bottom-banner single-banner bg-cover" style="background-image:url('{{ section.settings.single-banner-bg | img_url: "" }}')">
+</div>
+
+{% schema %}
+  {
+    "name": "Single Banner Section",
+    "settings": [
+		{
+        "id": "single-banner-bg",
+        "type": "image_picker",
+        "label": "Banner Background Image"
+      }
+	],
+	"presets": [
+        {
+         "name": "Single Banner Section"
+
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

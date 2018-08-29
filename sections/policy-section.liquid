@@ -1,0 +1,122 @@
+<div class="policy-section">
+  <div class="module">
+      <div class="module-body clearfix">
+        <ul class="nav nav-pills justify-content-center" role="tablist">
+           {% for block in section.blocks %}
+            <li class="nav-item">
+              <a class="nav-link {% if forloop.first == true %} active {% endif %}" href="#content-{{ forloop.index }}" role="tab" data-toggle="tab">
+                <img class="whiteImg" style="display:{% if forloop.first == true %}block{% else %}none{% endif %};" src="{{ block.settings.white-icon | img_url: '' }}" alt="">
+				<img class="blackImg" style="display:{% if forloop.first == true %}none{% else %}block{% endif %};" src="{{ block.settings.black-icon | img_url: '' }}" alt="">
+                <h5>{{ block.settings.policy-title }}</h5>
+                {{ block.settings.policy-sub-title }}
+              </a>
+            </li>
+          {% endfor %}
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <!--tabs accordion default-->
+            {% for block in section.blocks %}
+            <div role="tabpanel" class="tab-pane fade {% if forloop.first == true %} in active {% endif %}" id="content-{{ forloop.index }}">
+              <div class="policy-content">
+                <h2>{{ block.settings.policy-title }}</h2>
+                {{ block.settings.policy-content }}
+              </div>
+            </div>
+			{% endfor %}
+          </div>
+      </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Policy Section",
+    "settings": [
+	
+	],
+    "blocks": [
+      {
+        "type": "select",
+        "name": "Add Policy",
+        "settings": [
+         	{
+              "id": "black-icon",
+              "type": "image_picker",
+              "label": "Policy Black icon"
+            },
+			{
+              "id": "white-icon",
+              "type": "image_picker",
+              "label": "Policy white icon"
+            },
+			{
+              "id": "policy-title",
+              "type": "text",
+              "label": "Policy Title"
+            },
+			{
+              "id": "policy-sub-title",
+              "type": "richtext",
+              "label": "Policy sub Title"
+            },
+			{
+              "id": "policy-content",
+              "type": "richtext",
+              "label": "Policy Content"
+            }
+        ]
+      }
+    ],
+  "presets": [
+        {
+         "name": "Policy Section",
+			"blocks": [
+            { 
+              "type": "select"
+            }
+		  ]
+        }
+      ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+jQuery(document).ready( function($) {
+	$('.policy-section ul').on('click','li',function() {
+		$('.whiteImg').hide();
+		$('.blackImg').show();
+		$(this).find('.blackImg').hide();
+		$(this).find('.whiteImg').show();
+		
+	});
+});
+jQuery(document).ready( function($){
+  var url= window.location.href; 
+  var arr=url.split('/')[5];
+  if(arr == 'return'){
+     $('.nav-pills li a.active').removeClass('active');
+     $('.whiteImg').hide();
+     $('.blackImg').show();
+     $('.nav-pills li:nth-child(2) a').addClass('active show');
+     $('.nav-pills li:nth-child(2) a .whiteImg').show();
+     $('.nav-pills li:nth-child(2) a .blackImg').hide();
+     $('.tab-pane').removeClass('active');
+     $('#content-2').addClass('active show');
+  }
+  if(arr == 'terms-condition') {
+   $('.nav-pills li a.active').removeClass('active');
+     $('.whiteImg').hide();
+     $('.blackImg').show();
+     $('.nav-pills li:nth-child(3) a').addClass('active show');
+     $('.nav-pills li:nth-child(3) a .whiteImg').show();
+     $('.nav-pills li:nth-child(3) a .blackImg').hide();
+     $('.tab-pane').removeClass('active');
+     $('#content-3').addClass('active show');
+  }
+});
+{% endjavascript %}
